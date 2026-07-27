@@ -15,6 +15,9 @@ import InstitutionalFailures from "./pages/InstitutionalFailures";
 import SurveillanceCalendar from "./pages/SurveillanceCalendar";
 import ClinicalDirective from "./pages/ClinicalDirective";
 import RiskManagement from "./pages/RiskManagement";
+import EvidenceVault from "./pages/EvidenceVault";
+import ClinicalOversight from "./pages/ClinicalOversight";
+import ComprehensiveDirective from "./pages/ComprehensiveDirective";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -31,6 +34,9 @@ function Router() {
       <Route path={"/surveillance"} component={SurveillanceCalendar} />
       <Route path={"/directive"} component={ClinicalDirective} />
       <Route path={"/risk-management"} component={RiskManagement} />
+      <Route path={"/evidence-vault"} component={EvidenceVault} />
+      <Route path={"/clinical-oversight"} component={ClinicalOversight} />
+      <Route path={"/comprehensive-directive"} component={ComprehensiveDirective} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

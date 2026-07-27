@@ -19,9 +19,9 @@ export default function CareCoordination() {
       <main className="container max-w-4xl py-12">
         {/* Page Header */}
         <section className="mb-12">
-          <h2 className="text-4xl font-bold text-accent mb-4">Medi-Cal NEMT Reimbursement Entitlements</h2>
+          <h2 className="text-4xl font-bold text-accent mb-4">FFS Medi-Cal NEMT/NMT Entitlements</h2>
           <p className="text-lg text-muted-foreground">
-            California Medi-Cal members are entitled to reimbursement for transportation expenses to access covered medical services. This section documents your rights, the filing process, and required documentation.
+            As a <strong>Fee-For-Service (FFS)</strong> member, you must use statewide DHCS forms. Managed Care or regional forms (like Central California Alliance) will be regionalized and likely rejected. This section documents your rights and the mandatory filing process.
           </p>
         </section>
 
@@ -136,14 +136,14 @@ export default function CareCoordination() {
         {/* Filing Process */}
         <section className="mb-12">
           <div className="clinical-section">
-            <h3 className="text-3xl font-bold text-accent mb-6">How to File for Reimbursement</h3>
+            <h3 className="text-3xl font-bold text-accent mb-6">FFS Filing Process & Required Forms</h3>
             
             <div className="space-y-6">
               {/* Step 1 */}
               <div className="border-l-4 border-accent pl-6">
-                <h4 className="text-lg font-bold text-accent mb-2">Step 1: Download the Form</h4>
+                <h4 className="text-lg font-bold text-accent mb-2">Step 1: The Correct FFS Forms</h4>
                 <p className="text-foreground mb-3">
-                  Download the <strong>Medi-Cal Fee-for-Service Member Reimbursement Form for Transportation Expenses</strong> from:
+                  Download the <strong>MC 396 (PCS)</strong> for NEMT and the <strong>FFS NMT/NEMT Pre-Authorization Form</strong> for lodging/meals from:
                 </p>
                 <div className="bg-muted/50 p-3 rounded text-sm text-foreground font-mono break-all">
                   https://www.dhcs.ca.gov/services/medi-cal/Pages/Transportation_Beneficiaries_FAQ.aspx
