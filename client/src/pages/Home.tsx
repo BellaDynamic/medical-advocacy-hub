@@ -38,6 +38,9 @@ export default function Home() {
             <Link href="/directive" className="text-foreground hover:text-accent transition">
               Directive
             </Link>
+            <Link href="/risk-management" className="text-foreground hover:text-accent transition">
+              Risk Management
+            </Link>
           </div>
         </div>
       </nav>

@@ -93,3 +93,14 @@
 - [x] Add 50-Mile Geographical Exemption Code requirements for TAR/PCS
 - [x] Document Payee Data Record (STD 204) verification requirements
 - [x] Create printable provider instruction sheet for technical billing compliance
+
+## URGENT: UCLA Risk Management & DHCS Reporting
+
+- [x] Add UCLA Risk Management direct contact (310-825-6000 main line, Risk Management extension)
+- [x] Create Risk Management Reporting Protocol page on website with step-by-step filing instructions
+- [x] Add DHCS Fraud & Abuse Hotline (1-800-MEDI-CAL) to escalation contacts
+- [x] Document the "three-week silence" from Patient Experience as evidence of institutional failure
+- [x] Create formal complaint template for DHCS filing (with specific incident dates, provider names, harm documentation)
+- [x] Add California Department of Public Health (CDPH) reporting pathway (800-228-1019)
+- [x] Create printable "Incident Report Checklist" for immediate DHCS filing
+- [ ] Update slides with UCLA Risk Management contact and formal reporting deadline (48-hour mandate)
