@@ -180,6 +180,59 @@ export default function RiskManagement() {
           </div>
         </section>
 
+        {/* HHS Office for Civil Rights */}
+        <section className="mb-12">
+          <div className="clinical-section">
+            <h3 className="text-3xl font-bold text-accent mb-6">Step 5: U.S. Dept of Health & Human Services (Office for Civil Rights)</h3>
+            <p className="text-foreground mb-6">
+              File here for violations of civil rights, including ADA discrimination and failure to provide reasonable medical accommodations.
+            </p>
+
+            <div className="space-y-4">
+              <div className="bg-muted/50 p-4 rounded border border-border">
+                <h4 className="font-bold text-accent mb-2 flex items-center gap-2">
+                  <Phone className="w-5 h-5" />
+                  HHS Office for Civil Rights
+                </h4>
+                <p className="text-foreground font-mono text-lg mb-2">Phone: 800-368-1019</p>
+                <p className="text-foreground text-sm mb-2">
+                  <strong>Online:</strong> OCR Complaint Portal
+                </p>
+                <p className="text-foreground text-sm mb-2">
+                  <strong>Mailing Address:</strong> U.S. Department of Health and Human Services, 200 Independence Ave, SW Room 509F, HHH Building, Washington, D.C. 20201
+                </p>
+                <p className="text-foreground text-sm">
+                  <strong>What to report:</strong> Discrimination based on disability, failure to provide ADA-compliant care protocols, violation of patient civil rights.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Medical Board of California */}
+        <section className="mb-12">
+          <div className="clinical-section">
+            <h3 className="text-3xl font-bold text-accent mb-6">Step 6: Medical Board of California</h3>
+            <p className="text-foreground mb-6">
+              File here for complaints regarding specific physician conduct, negligence, and failure to meet the standard of care.
+            </p>
+
+            <div className="space-y-4">
+              <div className="bg-muted/50 p-4 rounded border border-border">
+                <h4 className="font-bold text-accent mb-2 flex items-center gap-2">
+                  <Phone className="w-5 h-5" />
+                  Medical Board of California
+                </h4>
+                <p className="text-foreground font-mono text-lg mb-2">Toll-Free: 800-633-2322</p>
+                <p className="text-foreground font-mono text-lg mb-2">Direct: 916-263-2382</p>
+                <p className="text-foreground text-sm">
+                  <strong>What to report:</strong> Physician negligence, failure to follow documented genomic protocols, unprofessional conduct, and harm caused by delays in care.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Printable Complaint Template */}
         <section className="mb-12">
           <div className="clinical-section">
