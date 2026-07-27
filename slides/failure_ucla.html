@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institutional Failures: UCLA Health</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            display: flex;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #334155;
+        }
+        
+        .index-column {
+            width: 30%;
+            background: #f8fafc;
+            border-right: 2px solid #0F172A;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 60px;
+        }
+        
+        .index-number {
+            font-size: 100px;
+            font-weight: 700;
+            color: #0F172A;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .main-content {
+            width: 70%;
+            padding: 60px 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #0F172A;
+            font-family: Georgia, serif;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .divider {
+            height: 2px;
+            background: #0F172A;
+            margin: 20px 0 30px 0;
+        }
+        
+        .failure-section {
+            margin-bottom: 20px;
+        }
+        
+        .section-header {
+            font-size: 13px;
+            font-weight: 700;
+            color: #991B1B;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        
+        .section-header.remedy {
+            color: #0F172A;
+        }
+        
+        .section-content {
+            font-size: 13px;
+            line-height: 1.5;
+            padding: 10px;
+            background: #fef2f2;
+            border-left: 4px solid #991B1B;
+        }
+        
+        .section-content.remedy {
+            background: #f8fafc;
+            border-left-color: #0F172A;
+        }
+        
+        .bullet-list {
+            list-style-type: none;
+        }
+        
+        .bullet-item {
+            margin-bottom: 4px;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        .bullet-item:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #991B1B;
+        }
+        
+        .bullet-item.remedy:before {
+            color: #0F172A;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="index-column">
+            <div class="index-number">08</div>
+        </div>
+        <div class="main-content">
+            <h1 class="title">Institutional Failures: UCLA Health System</h1>
+            <div class="divider"></div>
+            
+            <div class="failure-section">
+                <p class="section-header">Documented Failures (UCLA Chatbot Evidence, 2026)</p>
+                <div class="section-content">
+                    <ul class="bullet-list">
+                        <li class="bullet-item">Care coordination failure: FFS genetic cases denied bi-weekly assistance</li>
+                        <li class="bullet-item">Lodging support failure: Northern CA patient misdirected to international services</li>
+                        <li class="bullet-item">Patient Experience office unresponsiveness: Repeated failure to return calls for 1 year</li>
+                        <li class="bullet-item">Referral suppression: Specialty referrals blocked despite clinical indication</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="failure-section">
+                <p class="section-header">Downstream Harm</p>
+                <div class="section-content">
+                    <ul class="bullet-list">
+                        <li class="bullet-item">EHR erasure: Baseline genomic and imaging data from 2017 inaccessible</li>
+                        <li class="bullet-item">Accelerated structural degradation from excessive contrast exposures</li>
+                        <li class="bullet-item">Delayed diagnosis of progressive aortic tortuosity and vascular changes</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="failure-section">
+                <p class="section-header remedy">Required Remediation</p>
+                <div class="section-content remedy">
+                    <ul class="bullet-list">
+                        <li class="bullet-item remedy">Immediate EHR restoration of all archived baseline profiles and genomic data</li>
+                        <li class="bullet-item remedy">Mandatory placement of high-level "Genomic Complexity Warning" in EHR</li>
+                        <li class="bullet-item remedy">Establishment of formal care coordination with dedicated coordinator</li>
+                        <li class="bullet-item remedy">Mandatory genomic competency training for all clinical staff</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

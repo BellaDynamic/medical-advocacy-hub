@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Safety Firewall</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            display: flex;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #334155;
+        }
+        
+        .index-column {
+            width: 30%;
+            background: #f8fafc;
+            border-right: 2px solid #0F172A;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 60px;
+        }
+        
+        .index-number {
+            font-size: 100px;
+            font-weight: 700;
+            color: #0F172A;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .main-content {
+            width: 70%;
+            padding: 60px 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #0F172A;
+            font-family: Georgia, serif;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .divider {
+            height: 2px;
+            background: #0F172A;
+            margin: 20px 0 30px 0;
+        }
+        
+        .firewall-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #0F172A;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .checklist-item {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #0F172A;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        
+        .contra-item {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            padding: 10px;
+            background: #fef2f2;
+            border-left: 4px solid #991B1B;
+        }
+        
+        .agent-name {
+            font-weight: 700;
+            color: #991B1B;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="index-column">
+            <div class="index-number">05</div>
+        </div>
+        <div class="main-content">
+            <h1 class="title">The Safety Firewall: Mandatory Pre-Procedure Protocol</h1>
+            <div class="divider"></div>
+            
+            <div class="firewall-grid">
+                <div>
+                    <p class="section-title">Mandatory Pre-Procedure Checklist</p>
+                    <div class="checklist-item">
+                        <div class="checkbox"></div>
+                        <p><strong>Genomic Safety Review:</strong> Confirm no contraindicated agents will be used</p>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checkbox"></div>
+                        <p><strong>Mechanism Mapping:</strong> Document exact pathway of intervention interaction</p>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checkbox"></div>
+                        <p><strong>Pre-Procedure Labs:</strong> CMP, CBC, Mg/K levels, coagulation panel, LFTs</p>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checkbox"></div>
+                        <p><strong>Care Coordinator Contact:</strong> Notify Dr. Eby's team 48 hours before procedure</p>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checkbox"></div>
+                        <p><strong>Rescue Protocol Review:</strong> Ensure staff familiar with neuro-crash recognition</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <p class="section-title">Absolutely Contraindicated Agents</p>
+                    <div class="contra-item">
+                        <p><span class="agent-name">Propofol:</span> Triggers catastrophic GPCR signaling collapse</p>
+                    </div>
+                    <div class="contra-item">
+                        <p><span class="agent-name">Fentanyl & Opioids:</span> Absolute methylation pathway blockade</p>
+                    </div>
+                    <div class="contra-item">
+                        <p><span class="agent-name">Gadolinium Contrast:</span> Toxic accumulation due to impaired clearance</p>
+                    </div>
+                    <div class="contra-item">
+                        <p><span class="agent-name">Iodine-Based Contrast:</span> Acute metabolic and neuro-immune collapse</p>
+                    </div>
+                    <div class="contra-item">
+                        <p><span class="agent-name">PEG 3350:</span> Guaranteed electrolyte and PTH axis collapse</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

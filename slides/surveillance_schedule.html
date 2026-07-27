@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual Surveillance Schedule</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            display: flex;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #334155;
+        }
+        
+        .index-column {
+            width: 30%;
+            background: #f8fafc;
+            border-right: 2px solid #0F172A;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 60px;
+        }
+        
+        .index-number {
+            font-size: 100px;
+            font-weight: 700;
+            color: #0F172A;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .main-content {
+            width: 70%;
+            padding: 60px 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #0F172A;
+            font-family: Georgia, serif;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .divider {
+            height: 2px;
+            background: #0F172A;
+            margin: 20px 0 30px 0;
+        }
+        
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        .schedule-item {
+            margin-bottom: 20px;
+        }
+        
+        .frequency-label {
+            font-size: 14px;
+            font-weight: 700;
+            color: #991B1B;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        
+        .test-list {
+            font-size: 14px;
+            line-height: 1.6;
+            padding: 12px;
+            background: #f8fafc;
+            border-left: 4px solid #0F172A;
+        }
+        
+        .baseline-warning {
+            margin-top: 20px;
+            padding: 15px;
+            background: #fef2f2;
+            border-left: 6px solid #991B1B;
+            font-size: 14px;
+            color: #991B1B;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="index-column">
+            <div class="index-number">13</div>
+        </div>
+        <div class="main-content">
+            <h1 class="title">Annual Surveillance & Monitoring Schedule</h1>
+            <div class="divider"></div>
+            
+            <div class="schedule-grid">
+                <div>
+                    <div class="schedule-item">
+                        <p class="frequency-label">Quarterly</p>
+                        <div class="test-list">
+                            <p>Endocrine Panels (PTH, Ca, Vit D, Phos)</p>
+                            <p>Immune Subset Panels (CASP10 monitoring)</p>
+                            <p>Comprehensive Metabolic Panel (CMP)</p>
+                        </div>
+                    </div>
+                    <div class="schedule-item">
+                        <p class="frequency-label">Semi-Annual</p>
+                        <div class="test-list">
+                            <p>Thoracic Imaging (Vascular progression)</p>
+                            <p>Neuromuscular Tone Evaluation</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="schedule-item">
+                        <p class="frequency-label">Annual</p>
+                        <div class="test-list">
+                            <p>Colonoscopy (Lynch Syndrome protocol)</p>
+                            <p>DEXA Scan (Bone density monitoring)</p>
+                            <p>EKG with QTc (Vascular/Cardiac baseline)</p>
+                            <p>Full Body Skin Exam (Dermatology)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="baseline-warning">
+                MANDATORY: Every study must be compared against the 2017 baseline genomic and structural profiles. Institutional failure to restore baseline EHR data constitutes a direct barrier to accurate clinical surveillance.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

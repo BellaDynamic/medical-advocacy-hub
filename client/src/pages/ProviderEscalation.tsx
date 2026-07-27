@@ -37,14 +37,45 @@ export default function ProviderEscalation() {
               <div className="bg-muted/50 p-4 rounded border border-border">
                 <h4 className="font-bold text-accent mb-2 flex items-center gap-2">
                   <Phone className="w-5 h-5" />
+                  UCLA Office of Compliance Services
+                </h4>
+                <p className="text-foreground font-mono text-lg mb-2">(310) 794-8638</p>
+                <p className="text-foreground text-sm mb-2"><strong>Compliance Hotline:</strong> 1-800-403-4744</p>
+                <p className="text-foreground text-sm">
+                  <strong>Purpose:</strong> Mandatory for reporting ADA non-compliance, severe harm from care delays, and institutional failure to implement genomic safety protocols. This office handles formal investigations into administrative negligence.
+                </p>
+              </div>
+
+              <div className="bg-muted/50 p-4 rounded border border-border">
+                <h4 className="font-bold text-accent mb-2 flex items-center gap-2">
+                  <Phone className="w-5 h-5" />
+                  UCLA Patient Business Services (TAR/Voucher Assistance)
+                </h4>
+                <p className="text-foreground font-mono text-lg mb-2">(310) 825-8021</p>
+                <p className="text-foreground text-sm">
+                  <strong>Purpose:</strong> Direct assistance for financial and billing inquiries related to Treatment Authorization Requests (TARs) and medical vouchers. Use this line when clinic staff fail to process travel authorizations.
+                </p>
+              </div>
+
+              <div className="bg-muted/50 p-4 rounded border border-border">
+                <h4 className="font-bold text-accent mb-2 flex items-center gap-2">
+                  <Phone className="w-5 h-5" />
+                  UCLA Physicians' Billing Office
+                </h4>
+                <p className="text-foreground font-mono text-lg mb-2">(310) 301-8860</p>
+                <p className="text-foreground text-sm">
+                  <strong>Purpose:</strong> Customer service for resolving physician-specific billing matters and ensuring proper coordination between clinical services and financial authorization.
+                </p>
+              </div>
+
+              <div className="bg-muted/50 p-4 rounded border border-border">
+                <h4 className="font-bold text-accent mb-2 flex items-center gap-2">
+                  <Phone className="w-5 h-5" />
                   UCLA Patient Affairs / Office of the Patient Experience
                 </h4>
                 <p className="text-foreground font-mono text-lg mb-2">(310) 267-9113</p>
-                <p className="text-foreground text-sm mb-3">
-                  <strong>Hours:</strong> Monday–Friday, 8:00 AM to 5:00 PM
-                </p>
                 <p className="text-foreground text-sm">
-                  <strong>Purpose:</strong> Central department for filing formal complaints regarding social services mismanagement, lack of clinic coordination, and physical/financial trauma caused by administrative delays. This is your primary escalation line for case review and coordination.
+                  <strong>Purpose:</strong> Central department for filing formal complaints regarding social services mismanagement and lack of clinic coordination. Handles ADA-related grievances and discrimination concerns.
                 </p>
               </div>
 

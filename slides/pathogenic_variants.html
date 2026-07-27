@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmed Pathogenic Variants</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            display: flex;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #334155;
+        }
+        
+        .index-column {
+            width: 30%;
+            background: #f8fafc;
+            border-right: 2px solid #0F172A;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 60px;
+        }
+        
+        .index-number {
+            font-size: 100px;
+            font-weight: 700;
+            color: #0F172A;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .main-content {
+            width: 70%;
+            padding: 60px 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #0F172A;
+            font-family: Georgia, serif;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #334155;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .divider {
+            height: 2px;
+            background: #0F172A;
+            margin: 20px 0 30px 0;
+        }
+        
+        .variants-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        .variant-box {
+            border-left: 4px solid #991B1B;
+            padding-left: 15px;
+        }
+        
+        .variant-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #991B1B;
+            font-family: Georgia, serif;
+            margin-bottom: 12px;
+        }
+        
+        .variant-detail {
+            font-size: 13px;
+            color: #334155;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .variant-detail-label {
+            font-weight: 600;
+            color: #0F172A;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="index-column">
+            <div class="index-number">03</div>
+        </div>
+        <div class="main-content">
+            <h1 class="title">Two Confirmed Pathogenic Deletions</h1>
+            <p class="subtitle">Create Absolute Pathway Contradictions</p>
+            <div class="divider"></div>
+            
+            <div class="variants-grid">
+                <div class="variant-box">
+                    <p class="variant-name">STX16 Deletion / PHP1b</p>
+                    <p class="variant-detail"><span class="variant-detail-label">Mechanism:</span> G-protein signaling disruption causing intracellular secondary messenger depletion</p>
+                    <p class="variant-detail"><span class="variant-detail-label">Clinical Impact:</span> Autonomic collapse, neuromuscular failure, PTH/Calcium axis instability</p>
+                    <p class="variant-detail"><span class="variant-detail-label">Contraindicated:</span> Propofol, Fentanyl, standard opioids, benzodiazepines at standard doses</p>
+                </div>
+                
+                <div class="variant-box">
+                    <p class="variant-name">PMS2 Deletion / Lynch Syndrome</p>
+                    <p class="variant-detail"><span class="variant-detail-label">Mechanism:</span> DNA mismatch repair deficiency + absolute methylation blockade</p>
+                    <p class="variant-detail"><span class="variant-detail-label">Clinical Impact:</span> Toxic compound accumulation, impaired detoxification, cancer predisposition</p>
+                    <p class="variant-detail"><span class="variant-detail-label">Contraindicated:</span> Gadolinium contrast, iodine-based contrast, PEG 3350, NSAIDs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

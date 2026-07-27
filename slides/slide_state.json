@@ -1,0 +1,188 @@
+{
+  "project_info": {
+    "title": "Clinical Mandate for Genomic Safety & Institutional Accountability",
+    "created": 1785170745.36,
+    "last_updated": 1785171149.85,
+    "total_slides": 16
+  },
+  "slides": [
+    {
+      "id": "title_slide",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "problem_statement",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "pathogenic_variants",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "vus_monitoring",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "safety_firewall",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "rescue_protocol",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "failure_ucdavis",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "failure_ucla",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "failure_sutter",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "interdisciplinary_mandate",
+      "state": "edited",
+      "pageNum": 10
+    },
+    {
+      "id": "nemt_reimbursement",
+      "state": "edited",
+      "pageNum": 11
+    },
+    {
+      "id": "escalation_contacts",
+      "state": "edited",
+      "pageNum": 12
+    },
+    {
+      "id": "surveillance_schedule",
+      "state": "edited",
+      "pageNum": 13
+    },
+    {
+      "id": "legal_mandate",
+      "state": "edited",
+      "pageNum": 14
+    },
+    {
+      "id": "call_to_action",
+      "state": "edited",
+      "pageNum": 15
+    },
+    {
+      "id": "closing_stakes",
+      "state": "edited",
+      "pageNum": 16
+    }
+  ],
+  "outline": [
+    {
+      "id": "title_slide",
+      "title": "Clinical Mandate for Genomic Safety & Institutional Accountability",
+      "summary": "Title slide establishing the patient identity, care coordinator, and purpose of the presentation as a formal clinical and legal directive.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "problem_statement",
+      "title": "Why Standard Care Fails High-Complexity Genomic Cases",
+      "summary": "Slide explaining the mathematical and chemical incompatibility of standard clinical pathways with the patient's biological engine.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "pathogenic_variants",
+      "title": "Two Confirmed Pathogenic Deletions Create Absolute Pathway Contradictions",
+      "summary": "Documentation of confirmed STX16 and PMS2 deletions, their mechanisms, clinical impacts, and contraindicated agents.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "vus_monitoring",
+      "title": "Four VUS Require Aggressive Monitoring and May Be Pathogenic",
+      "summary": "Monitoring protocols and risk flags for CASP10, CLCN7, TBX1, and TLR3 variants of uncertain significance.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "safety_firewall",
+      "title": "The Safety Firewall: Mandatory Pre-Procedure Protocol",
+      "summary": "Mandatory pre-procedure checklist and list of absolutely contraindicated agents that must not be administered.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "rescue_protocol",
+      "title": "Emergency Response: The 3-Step Rescue Protocol",
+      "summary": "Immediate 3-step clinical response for neuro-crash events: terminate exposure, enzymatic bypass, and mineral restoration.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "failure_ucdavis",
+      "title": "Institutional Failures: UC Davis Medical Center",
+      "summary": "Documented failure at UC Davis regarding dismissal of genomic contraindications and required remediation steps.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "failure_ucla",
+      "title": "Institutional Failures: UCLA Health System",
+      "summary": "Documented systemic failures at UCLA including referral suppression, EHR data loss, and redundant imaging.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "failure_sutter",
+      "title": "Institutional Failures: Sutter Health",
+      "summary": "Documented radiological negligence at Sutter Health regarding structural progression and required remediation.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "interdisciplinary_mandate",
+      "title": "The Unified Interdisciplinary Mandate",
+      "summary": "Requirement for all departments to operate as a unified front with EHR flagging and dedicated care coordinators.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "nemt_reimbursement",
+      "title": "Medi-Cal NEMT Reimbursement: Entitlements & Filing",
+      "summary": "Legal entitlements for transportation reimbursement and the technical requirements for filing and authorization.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "escalation_contacts",
+      "title": "Provider Escalation Pathways: Internal & External Oversight",
+      "summary": "Direct escalation pathways to UCLA internal departments and external regulatory agencies like CDPH and HHS OCR.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "surveillance_schedule",
+      "title": "Comprehensive Annual Surveillance Schedule",
+      "summary": "Quarterly, semi-annual, and annual testing schedule required to prevent life-threatening complications.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "legal_mandate",
+      "title": "This Is Not a Recommendation: This Is a Legal and Clinical Mandate",
+      "summary": "Formal legal and clinical accountability statement establishing institutional liability for non-compliance.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "call_to_action",
+      "title": "Implementation Steps for Immediate Compliance",
+      "summary": "Actionable steps for healthcare providers, risk management, and legal representatives to ensure safety.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "closing_stakes",
+      "title": "The Stakes Are Clear: Patient Life Depends on Coordinated Care",
+      "summary": "Closing slide emphasizing that patient safety depends on unified, genomically-informed care coordination.",
+      "image_plan": "Use a suitable image if needed"
+    }
+  ]
+}

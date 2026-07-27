@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institutional Failures: UC Davis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            display: flex;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #334155;
+        }
+        
+        .index-column {
+            width: 30%;
+            background: #f8fafc;
+            border-right: 2px solid #0F172A;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 60px;
+        }
+        
+        .index-number {
+            font-size: 100px;
+            font-weight: 700;
+            color: #0F172A;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .main-content {
+            width: 70%;
+            padding: 60px 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #0F172A;
+            font-family: Georgia, serif;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .divider {
+            height: 2px;
+            background: #0F172A;
+            margin: 20px 0 30px 0;
+        }
+        
+        .failure-section {
+            margin-bottom: 25px;
+        }
+        
+        .section-header {
+            font-size: 14px;
+            font-weight: 700;
+            color: #991B1B;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+        
+        .section-header.remedy {
+            color: #0F172A;
+        }
+        
+        .section-content {
+            font-size: 14px;
+            line-height: 1.6;
+            padding: 12px;
+            background: #fef2f2;
+            border-left: 4px solid #991B1B;
+        }
+        
+        .section-content.remedy {
+            background: #f8fafc;
+            border-left-color: #0F172A;
+        }
+        
+        .bullet-list {
+            list-style-type: none;
+        }
+        
+        .bullet-item {
+            margin-bottom: 5px;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        .bullet-item:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #991B1B;
+        }
+        
+        .bullet-item.remedy:before {
+            color: #0F172A;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="index-column">
+            <div class="index-number">07</div>
+        </div>
+        <div class="main-content">
+            <h1 class="title">Institutional Failures: UC Davis Medical Center</h1>
+            <div class="divider"></div>
+            
+            <div class="failure-section">
+                <p class="section-header">Documented Failure</p>
+                <div class="section-content">
+                    <p>Anesthesia team proceeded with standard sedation protocols despite documented STX16/PHP1b and COMT/MTHFR variants. Propofol was administered despite clear contraindication.</p>
+                </div>
+            </div>
+            
+            <div class="failure-section">
+                <p class="section-header">Downstream Harm</p>
+                <div class="section-content">
+                    <ul class="bullet-list">
+                        <li class="bullet-item">Severe metabolic collapse and acute neuro-immune crash</li>
+                        <li class="bullet-item">Uncontrolled muscle tremors and toxic tissue accumulation</li>
+                        <li class="bullet-item">Discharge without proper stabilization or rescue response</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="failure-section">
+                <p class="section-header remedy">Required Remediation</p>
+                <div class="section-content remedy">
+                    <ul class="bullet-list">
+                        <li class="bullet-item remedy">Formal medical board reporting and incident investigation</li>
+                        <li class="bullet-item remedy">Mandatory genomic literacy training for all anesthesia staff</li>
+                        <li class="bullet-item remedy">Implementation of EHR flags for high-complexity genetic conditions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

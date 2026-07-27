@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Step Rescue Protocol</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            display: flex;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #334155;
+        }
+        
+        .index-column {
+            width: 30%;
+            background: #f8fafc;
+            border-right: 2px solid #0F172A;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 60px;
+        }
+        
+        .index-number {
+            font-size: 100px;
+            font-weight: 700;
+            color: #0F172A;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .main-content {
+            width: 70%;
+            padding: 60px 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #0F172A;
+            font-family: Georgia, serif;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .divider {
+            height: 2px;
+            background: #0F172A;
+            margin: 20px 0 30px 0;
+        }
+        
+        .protocol-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .step {
+            padding: 15px;
+            background: #f8fafc;
+            border-left: 6px solid #0F172A;
+        }
+        
+        .step.critical {
+            border-left-color: #991B1B;
+        }
+        
+        .step-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #0F172A;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        
+        .step-title.critical {
+            color: #991B1B;
+        }
+        
+        .step-detail {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .monitoring {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #0F172A;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .monitoring-title {
+            font-weight: 700;
+            color: #0F172A;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="index-column">
+            <div class="index-number">06</div>
+        </div>
+        <div class="main-content">
+            <h1 class="title">Emergency Response: The 3-Step Rescue Protocol</h1>
+            <div class="divider"></div>
+            
+            <div class="protocol-steps">
+                <div class="step critical">
+                    <p class="step-title critical">STEP 1: Terminate Exposure (Immediate)</p>
+                    <p class="step-detail">Stop all infusions; halt procedures. Disconnect IV lines; flush with normal saline. Activate emergency response.</p>
+                </div>
+                
+                <div class="step">
+                    <p class="step-title">STEP 2: Enzymatic Bypass (Within 30 Minutes)</p>
+                    <p class="step-detail"><strong>IV NAC:</strong> 1000 mg bolus, then 500 mg IV q4h for 24h. | <strong>IM Methyl-B12:</strong> 1000 mcg immediately, repeat q12h x 48h. Force open methylation pathways.</p>
+                </div>
+                
+                <div class="step">
+                    <p class="step-title">STEP 3: Mineral Restoration (Concurrent)</p>
+                    <p class="step-detail"><strong>IV Magnesium Sulfate:</strong> 1-2 g over 30-60 min. | <strong>IV Potassium:</strong> 20-40 mEq over 1-2h (if low). Stabilize cell membrane potential.</p>
+                </div>
+            </div>
+            
+            <div class="monitoring">
+                <p class="monitoring-title">Post-Rescue Monitoring & Escalation</p>
+                <p>Continuous cardiac monitoring. Repeat electrolytes q2h x 12h, then q4h x 48h. Immediate escalation to Dr. Jessica Eby's team and UCLA Patient Affairs.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

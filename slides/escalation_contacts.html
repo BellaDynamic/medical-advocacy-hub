@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Escalation Pathways</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            display: flex;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #334155;
+        }
+        
+        .index-column {
+            width: 30%;
+            background: #f8fafc;
+            border-right: 2px solid #0F172A;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 60px;
+        }
+        
+        .index-number {
+            font-size: 100px;
+            font-weight: 700;
+            color: #0F172A;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .main-content {
+            width: 70%;
+            padding: 60px 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #0F172A;
+            font-family: Georgia, serif;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .divider {
+            height: 2px;
+            background: #0F172A;
+            margin: 20px 0 30px 0;
+        }
+        
+        .escalation-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        .escalation-box {
+            border-left: 4px solid #0F172A;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .box-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #0F172A;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
+        .contact-item {
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+        
+        .contact-label {
+            font-weight: 600;
+            color: #991B1B;
+        }
+        
+        .external-agencies {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="index-column">
+            <div class="index-number">12</div>
+        </div>
+        <div class="main-content">
+            <h1 class="title">Direct Escalation & Compliance Pathways</h1>
+            <div class="divider"></div>
+            
+            <div class="escalation-grid">
+                <div>
+                    <p class="box-title">UCLA Health Escalation</p>
+                    <div class="escalation-box">
+                        <p class="contact-item"><span class="contact-label">Compliance Hotline:</span> 1-800-403-4744 (ADA non-compliance)</p>
+                        <p class="contact-item"><span class="contact-label">Compliance Office:</span> 310-794-8638 (Formal reporting)</p>
+                        <p class="contact-item"><span class="contact-label">Patient Experience:</span> 310-267-9113 (ADA grievances)</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <p class="box-title">DHCS State-Level Escalation</p>
+                    <div class="escalation-box">
+                        <p class="contact-item"><span class="contact-label">Medi-Cal Fraud & Abuse:</span> 1-800-MEDI-CAL</p>
+                        <p class="contact-item"><span class="contact-label">California Medical Board:</span> For physician conduct</p>
+                        <p class="contact-item"><span class="contact-label">CDPH:</span> 800-228-1019 (Health facilities inspection)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="external-agencies">
+                <p class="box-title">Federal & Regulatory Oversight</p>
+                <div class="escalation-grid">
+                    <p class="contact-item"><span class="contact-label">The Joint Commission:</span> 800-994-6610 (Quality/Safety)</p>
+                    <p class="contact-item"><span class="contact-label">HHS OCR:</span> 800-368-1019 (Civil Rights/ADA)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

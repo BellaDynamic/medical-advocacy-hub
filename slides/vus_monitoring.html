@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUS Monitoring Protocols</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #FFFFFF;
+            display: flex;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #334155;
+        }
+        
+        .index-column {
+            width: 30%;
+            background: #f8fafc;
+            border-right: 2px solid #0F172A;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 60px;
+        }
+        
+        .index-number {
+            font-size: 100px;
+            font-weight: 700;
+            color: #0F172A;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .main-content {
+            width: 70%;
+            padding: 60px 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #0F172A;
+            font-family: Georgia, serif;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .divider {
+            height: 2px;
+            background: #0F172A;
+            margin: 20px 0 30px 0;
+        }
+        
+        .vus-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .vus-item {
+            border-left: 4px solid #334155;
+            padding-left: 15px;
+        }
+        
+        .vus-item.priority {
+            border-left-color: #991B1B;
+            background: #fef2f2;
+            padding: 15px;
+        }
+        
+        .vus-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #0F172A;
+            margin-bottom: 8px;
+        }
+        
+        .vus-name.priority {
+            color: #991B1B;
+        }
+        
+        .vus-detail {
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        
+        .vus-label {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="index-column">
+            <div class="index-number">04</div>
+        </div>
+        <div class="main-content">
+            <h1 class="title">Variants of Uncertain Significance</h1>
+            <div class="divider"></div>
+            
+            <div class="vus-list">
+                <div class="vus-item priority">
+                    <p class="vus-name priority">CASP10 (HIGHEST PRIORITY)</p>
+                    <p class="vus-detail"><span class="vus-label">Function:</span> Apoptosis regulation | <span class="vus-label">Risk:</span> Lymphoproliferation, immune dysregulation</p>
+                    <p class="vus-detail"><span class="vus-label">Monitoring:</span> Quarterly immune panels, annual lymphocyte subset analysis</p>
+                </div>
+                
+                <div class="vus-item">
+                    <p class="vus-name">CLCN7</p>
+                    <p class="vus-detail"><span class="vus-label">Function:</span> Chloride channel regulation | <span class="vus-label">Risk:</span> Bone and immune dysfunction</p>
+                    <p class="vus-detail"><span class="vus-label">Monitoring:</span> Bone density scans, immune function panels</p>
+                </div>
+                
+                <div class="vus-item">
+                    <p class="vus-name">TBX1</p>
+                    <p class="vus-detail"><span class="vus-label">Function:</span> Developmental transcription factor | <span class="vus-label">Risk:</span> Cardiac and vascular changes</p>
+                    <p class="vus-detail"><span class="vus-label">Monitoring:</span> Annual thoracic imaging, EKG with QTc</p>
+                </div>
+                
+                <div class="vus-item">
+                    <p class="vus-name">TLR3</p>
+                    <p class="vus-detail"><span class="vus-label">Function:</span> Innate immunity (viral response) | <span class="vus-label">Risk:</span> Viral susceptibility, immune dysregulation</p>
+                    <p class="vus-detail"><span class="vus-label">Monitoring:</span> Immune function panels, infection history</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
