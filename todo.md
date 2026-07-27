@@ -25,8 +25,8 @@
 - [x] Safety Firewall page (pre-procedure checklist, contraindications, lab panels)
 - [x] Rescue & Stabilization Protocol page (neuro-crash emergency response)
 - [x] Institutional Failure & Remediation page (facility accountability)
-- [ ] Annual Surveillance Calendar page (tests, frequencies, conditions)
-- [ ] Clinical Directive Summary page (printable provider handoff)
+- [x] Annual Surveillance Calendar page (tests, frequencies, conditions)
+- [x] Clinical Directive Summary page (printable provider handoff)
 
 ### Backend & Database
 - [ ] Set up database schema for clinical data storage

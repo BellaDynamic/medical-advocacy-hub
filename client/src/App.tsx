@@ -12,6 +12,8 @@ import CareCoordination from "./pages/CareCoordination";
 import ProviderEscalation from "./pages/ProviderEscalation";
 import RescueProtocol from "./pages/RescueProtocol";
 import InstitutionalFailures from "./pages/InstitutionalFailures";
+import SurveillanceCalendar from "./pages/SurveillanceCalendar";
+import ClinicalDirective from "./pages/ClinicalDirective";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -25,6 +27,8 @@ function Router() {
       <Route path={"/escalation"} component={ProviderEscalation} />
       <Route path={"/rescue"} component={RescueProtocol} />
       <Route path={"/failures"} component={InstitutionalFailures} />
+      <Route path={"/surveillance"} component={SurveillanceCalendar} />
+      <Route path={"/directive"} component={ClinicalDirective} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

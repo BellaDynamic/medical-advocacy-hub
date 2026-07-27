@@ -32,6 +32,12 @@ export default function Home() {
             <Link href="/failures" className="text-foreground hover:text-accent transition">
               Failures
             </Link>
+            <Link href="/surveillance" className="text-foreground hover:text-accent transition">
+              Surveillance
+            </Link>
+            <Link href="/directive" className="text-foreground hover:text-accent transition">
+              Directive
+            </Link>
           </div>
         </div>
       </nav>
