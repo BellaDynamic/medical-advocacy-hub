@@ -23,6 +23,9 @@ export default function Home() {
             <Link href="/coordination" className="text-foreground hover:text-accent transition">
               Care Coordination
             </Link>
+            <Link href="/escalation" className="text-foreground hover:text-accent transition">
+              Escalation
+            </Link>
           </div>
         </div>
       </nav>

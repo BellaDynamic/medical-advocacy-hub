@@ -9,6 +9,7 @@ import GenomicProtocol from "./pages/GenomicProtocol";
 import VUS from "./pages/VUS";
 import SafetyFirewall from "./pages/SafetyFirewall";
 import CareCoordination from "./pages/CareCoordination";
+import ProviderEscalation from "./pages/ProviderEscalation";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -19,6 +20,7 @@ function Router() {
       <Route path={"/vus"} component={VUS} />
       <Route path={"/safety"} component={SafetyFirewall} />
       <Route path={"/coordination"} component={CareCoordination} />
+      <Route path={"/escalation"} component={ProviderEscalation} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

@@ -85,3 +85,11 @@
 - [x] Add NEMT reimbursement form requirements and filing instructions
 - [x] Document DHCS Beneficiary Service Center contact info and submission process
 - [x] Create printable NEMT filing checklist for members and caregivers
+
+## Provider Escalation & Technical Billing Requirements
+
+- [x] Create Provider Escalation Contacts page (UCLA, DHCS, state/federal FFS lines)
+- [x] Document Multi-Trip Signature & Stamp mandate for reimbursement
+- [x] Add 50-Mile Geographical Exemption Code requirements for TAR/PCS
+- [x] Document Payee Data Record (STD 204) verification requirements
+- [x] Create printable provider instruction sheet for technical billing compliance
