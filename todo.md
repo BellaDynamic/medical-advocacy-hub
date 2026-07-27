@@ -23,8 +23,8 @@
 - [x] Genomic Protocol page (STX16/PHP1b & PMS2/Lynch with lab citations)
 - [x] Variants of Uncertain Significance (VUS) page (CASP10, CLCN7, TBX1, TLR3)
 - [x] Safety Firewall page (pre-procedure checklist, contraindications, lab panels)
-- [ ] Rescue & Stabilization Protocol page (neuro-crash emergency response)
-- [ ] Institutional Failure & Remediation page (facility accountability)
+- [x] Rescue & Stabilization Protocol page (neuro-crash emergency response)
+- [x] Institutional Failure & Remediation page (facility accountability)
 - [ ] Annual Surveillance Calendar page (tests, frequencies, conditions)
 - [ ] Clinical Directive Summary page (printable provider handoff)
 

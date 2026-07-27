@@ -26,6 +26,12 @@ export default function Home() {
             <Link href="/escalation" className="text-foreground hover:text-accent transition">
               Escalation
             </Link>
+            <Link href="/rescue" className="text-foreground hover:text-accent transition">
+              Rescue
+            </Link>
+            <Link href="/failures" className="text-foreground hover:text-accent transition">
+              Failures
+            </Link>
           </div>
         </div>
       </nav>

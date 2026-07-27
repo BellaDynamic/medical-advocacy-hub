@@ -10,6 +10,8 @@ import VUS from "./pages/VUS";
 import SafetyFirewall from "./pages/SafetyFirewall";
 import CareCoordination from "./pages/CareCoordination";
 import ProviderEscalation from "./pages/ProviderEscalation";
+import RescueProtocol from "./pages/RescueProtocol";
+import InstitutionalFailures from "./pages/InstitutionalFailures";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -21,6 +23,8 @@ function Router() {
       <Route path={"/safety"} component={SafetyFirewall} />
       <Route path={"/coordination"} component={CareCoordination} />
       <Route path={"/escalation"} component={ProviderEscalation} />
+      <Route path={"/rescue"} component={RescueProtocol} />
+      <Route path={"/failures"} component={InstitutionalFailures} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
