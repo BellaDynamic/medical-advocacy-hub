@@ -46,6 +46,9 @@ export default function Home() {
             <Link href="/risk-management" className="text-foreground hover:text-accent transition">
               Risk Management
             </Link>
+            <Link href="/merge-hub" className="text-accent hover:underline transition font-semibold">
+              Merge Hub
+            </Link>
           </div>
         </div>
       </nav>

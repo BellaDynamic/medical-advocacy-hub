@@ -18,6 +18,7 @@ import RiskManagement from "./pages/RiskManagement";
 import EvidenceVault from "./pages/EvidenceVault";
 import ClinicalOversight from "./pages/ClinicalOversight";
 import ComprehensiveDirective from "./pages/ComprehensiveDirective";
+import ContentMergeHub from "./pages/ContentMergeHub";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -37,6 +38,7 @@ function Router() {
       <Route path={"/evidence-vault"} component={EvidenceVault} />
       <Route path={"/clinical-oversight"} component={ClinicalOversight} />
       <Route path={"/comprehensive-directive"} component={ComprehensiveDirective} />
+      <Route path={"/merge-hub"} component={ContentMergeHub} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

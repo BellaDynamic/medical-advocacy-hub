@@ -30,4 +30,18 @@ describe("color system", () => {
     expect(rescue).toContain("ARCHIVED / SUPERSEDED");
     expect(rescue).toContain("must NOT be used as a general clinical directive");
   });
+
+  it("includes the Content Merge Hub page", () => {
+    const mergeHub = readFileSync(join(process.cwd(), "client", "src", "pages", "ContentMergeHub.tsx"), "utf8");
+    expect(mergeHub).toContain("Content Merge & Revision Hub");
+    expect(mergeHub).toContain("External Site Detail Intake");
+  });
+
+  it("registers the merge-hub route in App.tsx and links it in Home.tsx", () => {
+    const app = readFileSync(join(process.cwd(), "client", "src", "App.tsx"), "utf8");
+    const home = readFileSync(join(process.cwd(), "client", "src", "pages", "Home.tsx"), "utf8");
+
+    expect(app).toContain('path={"/merge-hub"}');
+    expect(home).toContain('href="/merge-hub"');
+  });
 });

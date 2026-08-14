@@ -11,3 +11,7 @@
 ## Archived Content History
 - [x] Preserved prior medical-advocacy-hub archive and migration handoff.
 - [x] Quarantined outdated acute rescue/saline protocol content.
+- [x] Build the Content Merge & Revision Hub (`client/src/pages/ContentMergeHub.tsx`) to intake external site details and manage the merge workflow.
+- [x] Register `/merge-hub` route in `client/src/App.tsx` and link it from navigation.
+- [x] Create `CONTENT_MERGE_PROTOCOL.md` specifying rules for combining genomic protocols with external site details.
+- [x] Verify build and tests with Vitest coverage for merge routing.
