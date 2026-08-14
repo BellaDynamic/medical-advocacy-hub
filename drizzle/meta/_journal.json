@@ -8,6 +8,13 @@
       "when": 1784650618621,
       "tag": "0000_flaky_dracula",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1786684363771,
+      "tag": "0001_crazy_the_phantom",
+      "breakpoints": true
     }
   ]
 }

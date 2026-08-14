@@ -31,10 +31,14 @@ describe("color system", () => {
     expect(rescue).toContain("must NOT be used as a general clinical directive");
   });
 
-  it("includes the Content Merge Hub page", () => {
+  it("includes the Content Merge Hub page and document upload workflow", () => {
     const mergeHub = readFileSync(join(process.cwd(), "client", "src", "pages", "ContentMergeHub.tsx"), "utf8");
+    const routers = readFileSync(join(process.cwd(), "server", "routers.ts"), "utf8");
     expect(mergeHub).toContain("Content Merge & Revision Hub");
-    expect(mergeHub).toContain("External Site Detail Intake");
+    expect(mergeHub).toContain("External Document & Note Ingestion");
+    expect(mergeHub).toContain("file-upload");
+    expect(routers).toContain("documents: router({");
+    expect(routers).toContain("upload:");
   });
 
   it("registers the merge-hub route in App.tsx and links it in Home.tsx", () => {

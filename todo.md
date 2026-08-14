@@ -15,3 +15,7 @@
 - [x] Register `/merge-hub` route in `client/src/App.tsx` and link it from navigation.
 - [x] Create `CONTENT_MERGE_PROTOCOL.md` specifying rules for combining genomic protocols with external site details.
 - [x] Verify build and tests with Vitest coverage for merge routing.
+- [x] Add `uploaded_documents` table in `drizzle/schema.ts` and generate migration.
+- [x] Add tRPC mutation and query in `server/routers.ts` for file uploads using `storagePut`.
+- [x] Update `ContentMergeHub.tsx` with a drag-and-drop / file picker upload UI and uploaded documents list.
+- [x] Add Vitest test coverage for upload procedure and UI, verify build, and checkpoint.
