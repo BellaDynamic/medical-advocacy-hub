@@ -6,6 +6,11 @@ import { AlertTriangle, FileText, Shield, Clock, Users, BookOpen } from "lucide-
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      {/* Archival Banner */}
+      <div className="bg-amber-950/40 border-b border-amber-600/40 py-2 px-4 text-center text-amber-200 text-sm font-medium">
+        ARCHIVAL DRAFT — Awaiting clinical update & merger. Outdated acute/saline rescue protocols have been quarantined.
+      </div>
+
       {/* Navigation */}
       <nav className="bg-card border-b border-border sticky top-0 z-50">
         <div className="container py-4 flex justify-between items-center">
