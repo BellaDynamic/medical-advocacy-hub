@@ -57,31 +57,31 @@ export default function ClinicalOversight() {
           </header>
 
           <section className="mb-16">
-            <div className="critical-box border-4 bg-red-900/30 p-8">
-              <h3 className="text-2xl font-bold text-red-500 mb-6 uppercase flex items-center gap-3">
+            <div className="critical-box border-4 bg-primary/10 p-8">
+              <h3 className="text-2xl font-bold text-accent mb-6 uppercase flex items-center gap-3">
                 <Activity className="w-8 h-8" />
                 Immediate Procedure Oversight
               </h3>
               <p className="text-lg font-semibold mb-6">
                 Nursing notes from all facility procedures must be flagged for immediate review by the PCP and the relevant specialists. "Knowing is preventing." No procedure is to be authorized without a documented interdisciplinary protocol mapping.
               </p>
-              <div className="bg-background/50 p-6 rounded border border-red-500/30">
-                <h4 className="text-red-400 font-bold mb-3 uppercase text-sm tracking-widest">Mandatory Flagging:</h4>
+              <div className="bg-background/50 p-6 rounded border border-primary/30">
+                <h4 className="text-accent font-bold mb-3 uppercase text-sm tracking-widest">Mandatory Flagging:</h4>
                 <ul className="grid md:grid-cols-2 gap-4 text-sm">
                   <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-red-500 rounded-full" />
+                    <div className="w-2 h-2 bg-primary rounded-full" />
                     Biochemical Bioscience Misfires
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-red-500 rounded-full" />
+                    <div className="w-2 h-2 bg-primary rounded-full" />
                     Autonomic Tone Fluctuations
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-red-500 rounded-full" />
+                    <div className="w-2 h-2 bg-primary rounded-full" />
                     Connective Tissue Fragility Events
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-red-500 rounded-full" />
+                    <div className="w-2 h-2 bg-primary rounded-full" />
                     Metabolic Clearance Delays
                   </li>
                 </ul>

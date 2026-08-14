@@ -132,26 +132,26 @@ export default function VUS() {
 
         {/* TBX1 - HIGH PRIORITY */}
         <section className="mb-12">
-          <div className="clinical-section border-2 border-red-500">
+          <div className="clinical-section border-2 border-primary">
             <div className="flex gap-3 mb-6">
-              <AlertTriangle className="w-8 h-8 text-red-500 flex-shrink-0" />
+              <AlertTriangle className="w-8 h-8 text-accent flex-shrink-0" />
               <h3 className="text-3xl font-bold text-accent">TBX1 — DiGeorge / 22q11.2 Syndrome Risk [HIGH PRIORITY]</h3>
             </div>
             
             <div className="grid md:grid-cols-2 gap-4 mb-8">
-              <div className="bg-red-950/20 p-4 rounded border border-red-500">
+              <div className="bg-primary/10 p-4 rounded border border-primary">
                 <p className="text-sm text-muted-foreground mb-2">Variant</p>
                 <p className="font-semibold text-foreground">c.1444G{'>'} C (p.Ala482Pro)</p>
               </div>
-              <div className="bg-red-950/20 p-4 rounded border border-red-500">
+              <div className="bg-primary/10 p-4 rounded border border-primary">
                 <p className="text-sm text-muted-foreground mb-2">Associated Condition</p>
                 <p className="font-semibold text-foreground">DiGeorge / 22q11.2 syndrome</p>
               </div>
-              <div className="bg-red-950/20 p-4 rounded border border-red-500">
+              <div className="bg-primary/10 p-4 rounded border border-primary">
                 <p className="text-sm text-muted-foreground mb-2">Priority</p>
-                <p className="font-semibold text-red-500">HIGH — MONITOR</p>
+                <p className="font-semibold text-accent">HIGH — MONITOR</p>
               </div>
-              <div className="bg-red-950/20 p-4 rounded border border-red-500">
+              <div className="bg-primary/10 p-4 rounded border border-primary">
                 <p className="text-sm text-muted-foreground mb-2">PolyPhen-2</p>
                 <p className="font-semibold text-foreground">LIKELY DISRUPTIVE</p>
               </div>
@@ -175,23 +175,23 @@ export default function VUS() {
               <h4 className="clinical-header">Monitoring Protocol</h4>
               <ul className="space-y-3 text-foreground">
                 <li className="flex gap-3">
-                  <span className="text-red-500 font-bold">•</span>
+                  <span className="text-accent font-bold">•</span>
                   <span>T-cell subset panel (CD3, CD4, CD8 counts) annually</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-red-500 font-bold">•</span>
+                  <span className="text-accent font-bold">•</span>
                   <span>Calcium monitoring (dual pathway emphasis)</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-red-500 font-bold">•</span>
+                  <span className="text-accent font-bold">•</span>
                   <span>Flag to immunology</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-red-500 font-bold">•</span>
+                  <span className="text-accent font-bold">•</span>
                   <span>Reclassification review annually</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-red-500 font-bold">•</span>
+                  <span className="text-accent font-bold">•</span>
                   <span><strong>MANDATORY anesthesia notification before any sedation or procedure</strong></span>
                 </li>
               </ul>
@@ -281,7 +281,7 @@ export default function VUS() {
                     <td className="p-3 font-semibold">TBX1</td>
                     <td className="p-3">c.1444G{'>'} C</td>
                     <td className="p-3">DiGeorge / 22q11.2</td>
-                    <td className="p-3 text-red-500 font-bold">HIGH</td>
+                    <td className="p-3 text-accent font-bold">HIGH</td>
                   </tr>
                   <tr>
                     <td className="p-3 font-semibold">TLR3</td>

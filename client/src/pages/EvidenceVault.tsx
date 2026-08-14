@@ -103,10 +103,10 @@ export default function EvidenceVault() {
           </div>
 
           <section className="mt-16">
-            <div className="critical-box border-4 bg-red-900/30 flex gap-6 items-start">
-              <AlertCircle className="w-12 h-12 text-red-500 shrink-0 mt-1" />
+            <div className="critical-box border-4 bg-primary/10 flex gap-6 items-start">
+              <AlertCircle className="w-12 h-12 text-accent shrink-0 mt-1" />
               <div>
-                <h3 className="text-2xl font-bold text-red-500 mt-0 mb-4 uppercase">Institutional Failure Documentation</h3>
+                <h3 className="text-2xl font-bold text-accent mt-0 mb-4 uppercase">Institutional Failure Documentation</h3>
                 <p className="text-lg leading-relaxed font-semibold">
                   "The evidence in this vault documents a systematic pattern of neglect, ghosting, and refusal to implement genomic-safe protocols. These files serve as the evidentiary basis for formal complaints filed with DHCS, CDPH, and the Medical Board of California."
                 </p>

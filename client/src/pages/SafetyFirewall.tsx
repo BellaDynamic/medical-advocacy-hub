@@ -33,21 +33,21 @@ export default function SafetyFirewall() {
             <div className="danger-box mb-8">
               <h4 className="font-bold text-foreground mb-4">DO NOT ADMINISTER</h4>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="bg-red-950/20 p-3 rounded border border-red-500">
+                <div className="bg-primary/10 p-3 rounded border border-primary">
                   <p className="font-semibold text-foreground">Anesthetics</p>
                   <ul className="text-sm text-foreground mt-2 space-y-1">
                     <li>• Propofol</li>
                     <li>• Lidocaine (default blocks)</li>
                   </ul>
                 </div>
-                <div className="bg-red-950/20 p-3 rounded border border-red-500">
+                <div className="bg-primary/10 p-3 rounded border border-primary">
                   <p className="font-semibold text-foreground">Opioids</p>
                   <ul className="text-sm text-foreground mt-2 space-y-1">
                     <li>• Fentanyl</li>
                     <li>• Dilaudid (hydromorphone)</li>
                   </ul>
                 </div>
-                <div className="bg-red-950/20 p-3 rounded border border-red-500">
+                <div className="bg-primary/10 p-3 rounded border border-primary">
                   <p className="font-semibold text-foreground">Contrast Agents</p>
                   <ul className="text-sm text-foreground mt-2 space-y-1">
                     <li>• Gadolinium (unmapped formats)</li>
@@ -55,7 +55,7 @@ export default function SafetyFirewall() {
                     <li>• Iodine-based contrast</li>
                   </ul>
                 </div>
-                <div className="bg-red-950/20 p-3 rounded border border-red-500">
+                <div className="bg-primary/10 p-3 rounded border border-primary">
                   <p className="font-semibold text-foreground">Bowel Preps</p>
                   <ul className="text-sm text-foreground mt-2 space-y-1">
                     <li>• PEG 3350 (MiraLAX)</li>
@@ -69,15 +69,15 @@ export default function SafetyFirewall() {
               <h4 className="clinical-header">Mechanism of Contraindication</h4>
               <ul className="space-y-3 text-foreground">
                 <li className="flex gap-3">
-                  <span className="text-red-500 font-bold">1.</span>
+                  <span className="text-accent font-bold">1.</span>
                   <span><strong>Cellular Barrier Bypass:</strong> Agents bypass cellular barrier and fail to methylate → systemic tissue toxicity → autonomic collapse</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-red-500 font-bold">2.</span>
+                  <span className="text-accent font-bold">2.</span>
                   <span><strong>GPCR Pathway Misfires:</strong> Trigger GPCR pathway misfires → toxic buildup from impaired COMT clearing → neuro-crash</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-red-500 font-bold">3.</span>
+                  <span className="text-accent font-bold">3.</span>
                   <span><strong>Mucosal Permeability:</strong> Alter mucosal membrane permeability → local cellular inflammation → systemic vascular shock</span>
                 </li>
               </ul>

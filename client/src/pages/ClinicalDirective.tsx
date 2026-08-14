@@ -41,10 +41,10 @@ export default function ClinicalDirective() {
             </div>
           </header>
 
-          <div className="critical-box border-4 bg-red-900/30 flex gap-6 items-start">
-            <ShieldAlert className="w-12 h-12 text-red-500 shrink-0 mt-1" />
+          <div className="critical-box border-4 bg-primary/10 flex gap-6 items-start">
+            <ShieldAlert className="w-12 h-12 text-accent shrink-0 mt-1" />
             <div>
-              <h2 className="text-2xl font-bold text-red-500 mt-0 mb-4 uppercase border-none p-0">Mandatory EHR Override Flag</h2>
+              <h2 className="text-2xl font-bold text-accent mt-0 mb-4 uppercase border-none p-0">Mandatory EHR Override Flag</h2>
               <p className="text-lg leading-relaxed font-semibold">
                 "This patient possesses a non-standard biological engine with verified genomic microdeletions (STX16/GNAS) and severe methylation blockades (MTHFR/COMT). Standard clinical pathways, empirical radiological preps, and standardized procedural care models are mathematically and chemically guaranteed to induce severe systemic cascades ('neuro-crash') due to absolute pathway contradictions. All diagnostic and therapeutic interventions are locked down pending completed mapping against the Master Biogenetic Clinical Directive. Proceeding without care coordination clearance constitutes a direct violation of safety protocols."
               </p>

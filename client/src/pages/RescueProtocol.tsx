@@ -18,11 +18,11 @@ export default function RescueProtocol() {
 
       <main className="container max-w-4xl py-12">
         <section className="mb-12">
-          <div className="danger-box p-6 rounded border border-red-500 bg-red-950/20">
+          <div className="danger-box p-6 rounded border border-primary bg-primary/10">
             <div className="flex gap-4">
-              <AlertTriangle className="w-8 h-8 text-red-500 flex-shrink-0 mt-1" />
+              <AlertTriangle className="w-8 h-8 text-accent flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-xl font-bold text-red-400 mb-3">CRITICAL NOTICE: CONTENT QUARANTINED & SUPERSEDED</h3>
+                <h3 className="text-xl font-bold text-accent mb-3">CRITICAL NOTICE: CONTENT QUARANTINED & SUPERSEDED</h3>
                 <p className="text-foreground text-base mb-4 font-semibold">
                   The previous rescue protocol and acute stabilization guidance hosted here are officially recognized as <strong>outdated, inaccurate, and potentially hazardous</strong>. Specifically, generic saline recommendations and prior acute rescue instructions do not reflect safe, current clinical standards for this patient profile and must NOT be used as a general clinical directive.
                 </p>

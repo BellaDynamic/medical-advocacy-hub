@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Archival Banner */}
-      <div className="bg-amber-950/40 border-b border-amber-600/40 py-2 px-4 text-center text-amber-200 text-sm font-medium">
+      <div className="bg-card border-b border-primary/40 py-2 px-4 text-center text-accent text-sm font-medium">
         ARCHIVAL DRAFT — Awaiting clinical update & merger. Outdated acute/saline rescue protocols have been quarantined.
       </div>
 
@@ -66,7 +66,7 @@ export default function Home() {
             {/* Critical Alert */}
             <div className="critical-box">
               <div className="flex gap-4">
-                <AlertTriangle className="w-8 h-8 text-red-500 flex-shrink-0 mt-1" />
+                <AlertTriangle className="w-8 h-8 text-accent flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-lg font-bold text-foreground mb-2">MANDATORY SYSTEM DIRECTIVE</h3>
                   <p className="text-foreground">
@@ -109,7 +109,7 @@ export default function Home() {
 
               <Card className="bg-card border-border p-6 hover:bg-accent/5 transition">
                 <div className="flex gap-3 mb-3">
-                  <AlertTriangle className="w-6 h-6 text-red-500 flex-shrink-0" />
+                  <AlertTriangle className="w-6 h-6 text-accent flex-shrink-0" />
                   <h4 className="text-lg font-bold text-accent">Safety Firewall</h4>
                 </div>
                 <p className="text-foreground text-sm">
