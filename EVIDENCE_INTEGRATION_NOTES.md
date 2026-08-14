@@ -131,3 +131,19 @@ These should be presented as **lab-verified biochemical support data** from Geno
 - **Rescue Protocol** page: tie methylation-support rationale to NAC, methyl-B12, and restoration logic.
 - **Slides**: update biochemical mechanism slide with specific lab-supported markers (choline, DMG, glutathione).
 
+
+- **Immune findings:** No explicit immune findings were mentioned in this document.
+
+
+## Source: `Clinical_Summary_of_Primary_Conditions.csv`
+
+### Summary of clinical conditions and cross-reference
+- **Neurological:** Brain pain, CNS hypoactivity, pressure, lesions; neuroinflammation. Signals neurovascular damage and neurotransmitter dysfunction, warrants neurology referral and urgent imaging. (Integrated into Neuro-Cardiovascular and Neurology protocol sections).
+- **Vascular & Cardiovascular:** Tortuous aortic arch, calcification (heart, brain, ears), poor circulation. High cardiovascular risk; requires vascular consult and monitoring of heart/brain function. (Integrated into Vascular Medicine and Cardiovascular protocols).
+- **Endocrine & Metabolic:** ALPS syndrome, PMS2 deletion, low methylation function. Genetic and cellular-level dysfunction affecting DNA repair and apoptosis. (Integrated into Genomic Protocol and Endocrinology).
+- **Hormonal & Methylation:** Absent hormone production, poor methylation capacity, impaired pathways. B6 accumulation risk due to breakdown failure; endocrine imbalance, immune dysregulation. (Integrated into Methylation & Detoxification sections).
+- **Immune & Autoimmune:** Autoimmune responses, systemic inflammation, lymphatic dysfunction. Multiple immune failures—requires systemic and targeted immune therapy. (Integrated into Immunology and Rheumatology protocols).
+- **Minerals & Enzymes:** Loss of calcium/creatinine in urine, poor vitamin/mineral retention. Supports supplementation protocols; need for IV therapy tailored to retention issues. (Integrated into Care Coordination, Renal, and Rescue protocols).
+- **Detoxification:** Glutathione pathway impairment, toxic load accumulation. IV Glutathione and detox IVs needed; enzymes and cofactors support liver detox. (Integrated into Hepatology and Methylation sections).
+- **Inflammatory & Pain:** Pain in shoulders, spine (scoliosis, deterioration), chronic inflammation. Pain management must avoid neurotoxic meds; consider anti-inflammatory IVs. (Integrated into Skeletal/Orthopedics and Safety Firewall).
+- **Genetic Findings:** PMS2 deletion, ALPS syndrome, methylation panel dysfunction. Genetics direct therapy resistance, metabolic dysfunction—must be part of care plan. (Integrated into Genomic Protocol and PCP Mandate).
