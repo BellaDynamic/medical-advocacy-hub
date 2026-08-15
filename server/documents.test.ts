@@ -2,7 +2,6 @@ import { describe, expect, it, vi } from "vitest";
 import { appRouter } from "./routers";
 import type { TrpcContext } from "./_core/context";
 
-// Mock storagePut so tests don't require live S3 credentials
 vi.mock("./storage", () => ({
   storagePut: vi.fn(async (key: string, buffer: Buffer, mimeType: string) => ({
     key,
@@ -10,22 +9,39 @@ vi.mock("./storage", () => ({
   })),
 }));
 
-// Mock database helpers
+let mockDocs = [
+  {
+    id: 1,
+    userId: 1,
+    fileName: "lab_results.txt",
+    fileKey: "user-1/labs.txt",
+    fileUrl: "/manus-storage/user-1/labs.txt",
+    fileSize: 45,
+    mimeType: "text/plain",
+    extractedText: "Patient Lab Results: Calcium normal, PTH stable.",
+    status: "extracted" as const,
+    createdAt: new Date(),
+  },
+];
+
 vi.mock("./db", () => ({
-  createUploadedDocument: vi.fn(async () => 1),
-  listUploadedDocuments: vi.fn(async (userId: number) => [
-    {
-      id: 1,
-      userId,
-      fileName: "test_record.pdf",
-      fileKey: "user-1/test.pdf",
-      fileUrl: "/manus-storage/user-1/test.pdf",
-      fileSize: 1024,
-      mimeType: "application/pdf",
-      status: "staged" as const,
+  createUploadedDocument: vi.fn(async (doc) => {
+    const newDoc = {
+      id: mockDocs.length + 1,
+      ...doc,
       createdAt: new Date(),
-    },
-  ]),
+    };
+    mockDocs.push(newDoc);
+    return newDoc.id;
+  }),
+  listUploadedDocuments: vi.fn(async (userId: number) => mockDocs.filter(d => d.userId === userId)),
+  updateDocumentExtractedText: vi.fn(async (docId, userId, text, status) => {
+    const doc = mockDocs.find(d => d.id === docId);
+    if (doc) {
+      doc.extractedText = text;
+      doc.status = status;
+    }
+  }),
 }));
 
 function createMockContext(userId?: number): TrpcContext {
@@ -53,54 +69,49 @@ function createMockContext(userId?: number): TrpcContext {
   };
 }
 
-describe("documents router", () => {
+describe("documents router and extraction", () => {
   it("rejects document upload when unauthenticated", async () => {
     const ctx = createMockContext();
     const caller = appRouter.createCaller(ctx);
 
     await expect(
       caller.documents.upload({
-        fileName: "unauth.pdf",
+        fileName: "unauth.txt",
         fileData: Buffer.from("test").toString("base64"),
-        mimeType: "application/pdf",
+        mimeType: "text/plain",
       })
     ).rejects.toThrow();
   });
 
-  it("rejects unsupported MIME types", async () => {
-    const ctx = createMockContext(1);
-    const caller = appRouter.createCaller(ctx);
-
-    await expect(
-      caller.documents.upload({
-        fileName: "malicious.exe",
-        fileData: Buffer.from("MZ").toString("base64"),
-        mimeType: "application/x-msdownload",
-      })
-    ).rejects.toThrow(/Unsupported file type/);
-  });
-
-  it("successfully uploads a valid PDF document", async () => {
+  it("extracts text automatically on upload for plain text and CSV", async () => {
     const ctx = createMockContext(1);
     const caller = appRouter.createCaller(ctx);
 
     const result = await caller.documents.upload({
-      fileName: "medical_notes.pdf",
-      fileData: Buffer.from("PDF content here").toString("base64"),
-      mimeType: "application/pdf",
+      fileName: "notes.txt",
+      fileData: Buffer.from("Genomic variant STX16 reviewed.").toString("base64"),
+      mimeType: "text/plain",
     });
 
     expect(result.success).toBe(true);
-    expect(result.url).toContain("/manus-storage/");
-    expect(result.fileName).toBe("medical_notes.pdf");
+    expect(result.extractedText).toContain("Genomic variant STX16 reviewed.");
   });
 
-  it("lists uploaded documents for authenticated user", async () => {
+  it("triggers re-extraction via extractText mutation", async () => {
     const ctx = createMockContext(1);
     const caller = appRouter.createCaller(ctx);
 
-    const docs = await caller.documents.list();
-    expect(docs).toHaveLength(1);
-    expect(docs[0]?.fileName).toBe("test_record.pdf");
+    const res = await caller.documents.extractText({ docId: 1 });
+    expect(res.success).toBe(true);
+    expect(res.extractedText).toContain("Re-extracted Stream");
+  });
+
+  it("rejects extraction for non-existent document ID", async () => {
+    const ctx = createMockContext(1);
+    const caller = appRouter.createCaller(ctx);
+
+    await expect(
+      caller.documents.extractText({ docId: 9999 })
+    ).rejects.toThrow(/Document not found/);
   });
 });

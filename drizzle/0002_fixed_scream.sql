@@ -1,0 +1,2 @@
+ALTER TABLE `uploaded_documents` MODIFY COLUMN `status` enum('staged','extracted','verified','merged') NOT NULL DEFAULT 'staged';--> statement-breakpoint
+ALTER TABLE `uploaded_documents` ADD `extractedText` text;

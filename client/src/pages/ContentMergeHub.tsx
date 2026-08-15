@@ -1,25 +1,27 @@
 import React, { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
-import { ChevronLeft, Layers, GitMerge, FileCheck, ShieldAlert, ArrowRight, Upload, FileText, CheckCircle2 } from "lucide-react";
+import { ChevronLeft, Layers, GitMerge, FileCheck, ShieldAlert, ArrowRight, Upload, FileText, CheckCircle2, Eye, FileCode } from "lucide-react";
 import { trpc } from "@/lib/trpc";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { startLogin } from "@/const";
+import type { UploadedDocument } from "../../../drizzle/schema";
 
 export default function ContentMergeHub() {
   const { user } = useAuth();
   const utils = trpc.useUtils();
   const [uploading, setUploading] = useState(false);
   const [uploadMessage, setUploadMessage] = useState("");
+  const [selectedDoc, setSelectedDoc] = useState<UploadedDocument | null>(null);
 
   const { data: documents, isLoading: docsLoading } = trpc.documents.list.useQuery(undefined, {
     enabled: !!user,
   });
 
   const uploadMutation = trpc.documents.upload.useMutation({
-    onSuccess: () => {
+    onSuccess: (data) => {
       setUploading(false);
-      setUploadMessage("Document successfully uploaded and staged for merge verification.");
+      setUploadMessage("Document successfully uploaded and automatically extracted!");
       utils.documents.list.invalidate();
     },
     onError: (err) => {
@@ -38,7 +40,7 @@ export default function ContentMergeHub() {
     }
 
     setUploading(true);
-    setUploadMessage(`Uploading ${file.name}...`);
+    setUploadMessage(`Uploading and extracting text from ${file.name}...`);
 
     const reader = new FileReader();
     reader.onload = () => {
@@ -84,7 +86,7 @@ export default function ContentMergeHub() {
             <h1 className="text-4xl font-bold text-accent">Content Merge & Revision Hub</h1>
           </div>
           <p className="text-lg text-muted-foreground">
-            Prepared staging environment for integrating updated clinical dossiers, institutional failure timelines, and external site details into a unified master resource while maintaining strict separation from quarantined protocols.
+            Staging environment for uploading medical documents, automatically extracting text streams, and integrating clinical notes into the master advocacy architecture.
           </p>
         </section>
 
@@ -94,27 +96,27 @@ export default function ContentMergeHub() {
             <div className="flex gap-4">
               <ShieldAlert className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-lg font-bold text-foreground mb-2">MERGE GOVERNANCE & PROTOCOL INTEGRITY</h3>
+                <h3 className="text-lg font-bold text-foreground mb-2">AUTOMATED TEXT EXTRACTION & VERIFICATION</h3>
                 <p className="text-foreground text-sm mb-2">
-                  When combining material from external portals or previous Manus chat versions, all incoming text must be cross-verified against established genomic files (STX16, PMS2, MTHFR/COMT). Outdated rescue guidance (such as generalized saline protocols) remains permanently quarantined.
+                  Uploaded documents are automatically scanned and parsed into text streams for review. Original files remain unaltered in S3 storage while extracted drafts are queued for clinical verification.
                 </p>
                 <p className="text-foreground text-xs font-semibold">
-                  Status: Staging ready for external content ingestion and section re-indexing.
+                  Status: OCR & Parsing Engine active.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Document Upload Section */}
+        {/* Document Upload & List Section */}
         <section className="space-y-6">
           <h2 className="text-2xl font-bold text-accent border-b border-border pb-2 flex items-center gap-2">
-            <Upload className="w-6 h-6" /> External Document & Note Ingestion
+            <Upload className="w-6 h-6" /> Document Upload & Text Review
           </h2>
 
           {!user ? (
             <Card className="bg-card border-border p-8 text-center space-y-4">
-              <p className="text-muted-foreground">Please sign in to securely upload and stage your medical notes and documents.</p>
+              <p className="text-muted-foreground">Please sign in to securely upload documents and review extracted text.</p>
               <button
                 onClick={() => startLogin()}
                 className="bg-accent text-accent-foreground px-6 py-2.5 rounded-lg font-semibold text-sm hover:opacity-90 transition"
@@ -125,9 +127,9 @@ export default function ContentMergeHub() {
           ) : (
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="bg-card border-border p-6 space-y-4">
-                <h3 className="text-xl font-bold text-accent">Upload New File</h3>
+                <h3 className="text-xl font-bold text-accent">Upload Medical Record</h3>
                 <p className="text-sm text-muted-foreground">
-                  Select PDF, DOCX, CSV, or text files containing your external site notes and medical records. Files are stored securely and encrypted in project storage.
+                  Upload PDF, DOCX, TXT, CSV, or medical images. Text extraction runs automatically upon upload.
                 </p>
 
                 <div className="border-2 border-dashed border-border rounded-lg p-6 text-center space-y-4 hover:border-accent transition">
@@ -144,7 +146,7 @@ export default function ContentMergeHub() {
                       disabled={uploading}
                     />
                   </div>
-                  <p className="text-xs text-muted-foreground">Maximum file size: 20MB</p>
+                  <p className="text-xs text-muted-foreground">Supported formats: PDF, DOCX, TXT, CSV, Images (Max 20MB)</p>
                 </div>
 
                 {uploadMessage && (
@@ -156,16 +158,16 @@ export default function ContentMergeHub() {
 
               <Card className="bg-card border-border p-6 space-y-4 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl font-bold text-accent mb-2">Staged Documents</h3>
+                  <h3 className="text-xl font-bold text-accent mb-2">Uploaded & Extracted Files</h3>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Previously uploaded documents awaiting review and merge incorporation.
+                    Click "Review Text" to inspect automatically parsed document contents.
                   </p>
 
                   {docsLoading ? (
                     <p className="text-sm text-muted-foreground">Loading documents...</p>
                   ) : !documents || documents.length === 0 ? (
                     <div className="text-center py-8 border border-border rounded-lg text-muted-foreground text-sm">
-                      No documents staged yet.
+                      No documents uploaded yet.
                     </div>
                   ) : (
                     <ul className="space-y-3 max-h-60 overflow-y-auto pr-2">
@@ -177,14 +179,12 @@ export default function ContentMergeHub() {
                           </div>
                           <div className="flex items-center gap-2 flex-shrink-0">
                             <span className="text-xs bg-accent/20 text-accent px-2 py-0.5 rounded capitalize">{doc.status}</span>
-                            <a
-                              href={doc.fileUrl}
-                              target="_blank"
-                              rel="noreferrer"
-                              className="text-xs text-accent hover:underline font-semibold"
+                            <button
+                              onClick={() => setSelectedDoc(doc)}
+                              className="text-xs bg-accent text-accent-foreground px-2.5 py-1 rounded font-semibold hover:opacity-90 transition flex items-center gap-1"
                             >
-                              View
-                            </a>
+                              <Eye className="w-3.5 h-3.5" /> Review Text
+                            </button>
                           </div>
                         </li>
                       ))}
@@ -193,47 +193,44 @@ export default function ContentMergeHub() {
                 </div>
 
                 <div className="text-xs text-muted-foreground pt-4 border-t border-border flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-accent" /> Secure S3 storage enabled via project vault
+                  <CheckCircle2 className="w-4 h-4 text-accent" /> Original files preserved in S3 storage
                 </div>
               </Card>
             </div>
           )}
         </section>
 
-        {/* Merge Workstreams */}
-        <section className="space-y-6">
-          <h2 className="text-2xl font-bold text-accent border-b border-border pb-2">Active Merge Workstreams</h2>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <Card className="bg-card border-border p-6 space-y-4">
-              <div className="flex items-center gap-3">
-                <Layers className="w-6 h-6 text-accent" />
-                <h3 className="text-xl font-bold text-accent">1. External Site Detail Intake</h3>
+        {/* Extracted Text Review Modal / Panel */}
+        {selectedDoc && (
+          <section className="bg-card border-2 border-accent/40 p-6 rounded-lg space-y-4 shadow-xl">
+            <div className="flex items-center justify-between border-b border-border pb-3">
+              <div className="flex items-center gap-2">
+                <FileCode className="w-6 h-6 text-accent" />
+                <h3 className="text-xl font-bold text-accent">Extracted Text Review: {selectedDoc.fileName}</h3>
               </div>
-              <p className="text-foreground text-sm leading-relaxed">
-                Ingesting supplementary institutional records, care coordination updates, and departmental escalation logs from external user files.
-              </p>
-              <div className="text-xs text-muted-foreground pt-2 border-t border-border flex justify-between items-center">
-                <span>Target: Unified Master Dossier</span>
-                <span className="text-accent font-semibold">Ready</span>
-              </div>
-            </Card>
-
-            <Card className="bg-card border-border p-6 space-y-4">
-              <div className="flex items-center gap-3">
-                <FileCheck className="w-6 h-6 text-accent" />
-                <h3 className="text-xl font-bold text-accent">2. Protocol Firewall Validation</h3>
-              </div>
-              <p className="text-foreground text-sm leading-relaxed">
-                Enforcing absolute mechanism mapping compliance across all newly merged departmental protocols, ensuring zero unmapped interventions.
-              </p>
-              <div className="text-xs text-muted-foreground pt-2 border-t border-border flex justify-between items-center">
-                <span>Target: Safety Firewall Compliance</span>
-                <span className="text-accent font-semibold">Enforced</span>
-              </div>
-            </Card>
-          </div>
-        </section>
+              <button
+                onClick={() => setSelectedDoc(null)}
+                className="text-sm text-muted-foreground hover:text-foreground font-semibold"
+              >
+                Close Panel ✕
+              </button>
+            </div>
+            <div className="bg-background p-4 rounded-md border border-border max-h-96 overflow-y-auto font-mono text-xs whitespace-pre-wrap leading-relaxed text-foreground">
+              {selectedDoc.extractedText || "No text extracted for this document."}
+            </div>
+            <div className="flex justify-between items-center text-xs text-muted-foreground pt-2">
+              <span>MIME Type: {selectedDoc.mimeType} | Size: {selectedDoc.fileSize} bytes</span>
+              <a
+                href={selectedDoc.fileUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="text-accent hover:underline font-semibold"
+              >
+                Open Original File in New Tab →
+              </a>
+            </div>
+          </section>
+        )}
 
         {/* Action Footer */}
         <section className="bg-card border border-border p-8 rounded-lg text-center space-y-4">

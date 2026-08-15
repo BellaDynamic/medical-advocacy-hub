@@ -19,3 +19,8 @@
 - [x] Add tRPC mutation and query in `server/routers.ts` for file uploads using `storagePut`.
 - [x] Update `ContentMergeHub.tsx` with a drag-and-drop / file picker upload UI and uploaded documents list.
 - [x] Add Vitest test coverage for upload procedure and UI, verify build, and checkpoint.
+- [x] Add `extractedText` column to `uploaded_documents` table in schema and apply via SQL migration.
+- [x] Implement text parsing / extraction utility for uploaded text, CSV, markdown, and document buffers in server.
+- [x] Add `documents.extractText` tRPC mutation in `server/routers.ts`.
+- [x] Update `ContentMergeHub.tsx` to display extracted text in a review modal/accordion with status badges.
+- [x] Add Vitest test coverage for text extraction and review endpoints, verify build, and checkpoint.

@@ -81,3 +81,11 @@ export async function listUploadedDocuments(userId: number): Promise<UploadedDoc
   if (!db) return [];
   return db.select().from(uploadedDocuments).where(eq(uploadedDocuments.userId, userId)).orderBy(desc(uploadedDocuments.createdAt));
 }
+
+export async function updateDocumentExtractedText(docId: number, userId: number, text: string, status: "extracted" | "verified"): Promise<void> {
+  const db = await getDb();
+  if (!db) return;
+  await db.update(uploadedDocuments)
+    .set({ extractedText: text, status })
+    .where(eq(uploadedDocuments.id, docId));
+}
