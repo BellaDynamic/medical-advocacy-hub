@@ -24,3 +24,7 @@
 - [x] Add `documents.extractText` tRPC mutation in `server/routers.ts`.
 - [x] Update `ContentMergeHub.tsx` to display extracted text in a review modal/accordion with status badges.
 - [x] Add Vitest test coverage for text extraction and review endpoints, verify build, and checkpoint.
+- [x] Freeze feature development and create a final recovery-focused export package.
+- [x] Build a static HTML-ready export and current source/database inventory for independent hosting.
+- [x] Upload the recovery package to Google Drive and verify the Drive copy.
+- [x] Save a final preservation checkpoint and document the required Manus Task Data Backup steps.
