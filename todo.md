@@ -35,3 +35,7 @@
 - [x] Build a source-led Mandated Labs, Surveillance, and Referrals website section from the exact uploaded Markdown.
 - [x] Present surveillance, laboratory, and referral material as clinician-review requests with source provenance rather than as independently verified medical directives.
 - [x] Register the new page in navigation, add tests, verify the rendering, and save a new revision checkpoint.
+- [x] Audit the newly attached records and all accessible project evidence for immune/BMT, bone, vascular, hematologic, kidney, liver, lung, mixed connective tissue, endocrine, metabolic/mineral, detoxification, heart, and brain coverage.
+- [x] Create an evidence ledger that distinguishes source-supported findings, user-reported concerns, requested clinical review, and claims that require original-report verification.
+- [x] Rebuild the Mandated Labs website section into a full multi-system map with explicit department ownership and source traceability.
+- [x] Add regression coverage, verify all routes and rendering, then save a revised checkpoint.

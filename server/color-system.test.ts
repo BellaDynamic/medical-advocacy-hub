@@ -59,7 +59,37 @@ describe("color system", () => {
     expect(page).toContain("Clinical verification is required");
     expect(page).toContain("Mandated_Labs_Surveillance_Referrals.md");
     expect(page).toContain("A clinician determines");
+    expect(page).toContain("Whole-body coverage index");
+    expect(page).toContain("Hematology, BMT & bleeding");
     expect(app).toContain('path={"/mandated-labs"}');
     expect(home).toContain('href="/mandated-labs"');
+  });
+
+  it("includes every required domain in the source-led multi-system evidence map", () => {
+    const page = readFileSync(join(process.cwd(), "client", "src", "pages", "SystemEvidenceMap.tsx"), "utf8");
+    const app = readFileSync(join(process.cwd(), "client", "src", "App.tsx"), "utf8");
+    const home = readFileSync(join(process.cwd(), "client", "src", "pages", "Home.tsx"), "utf8");
+
+    [
+      "Hematology, BMT & bleeding",
+      "Immune, lymphatic & BMT overlap",
+      "Kidney & nephrology",
+      "Liver, lipid & hepatology",
+      "Lung & pulmonary",
+      "Heart & vascular",
+      "Bone, spine & musculoskeletal",
+      "Mixed connective tissue & rheumatology",
+      "Endocrine, mineral & adrenal",
+      "Metabolic, methylation & detoxification",
+      "Brain, neuro & neurovascular",
+      "GI, nutrition & absorption",
+      "Oncology, genetics & pathology",
+      "Radiology, masses & pathology workflow",
+      "Eye & ophthalmology",
+    ].forEach((domain) => expect(page).toContain(domain));
+
+    expect(page).toContain("No source request, advocacy statement, educational screener, or scout image");
+    expect(app).toContain('path={"/system-map"}');
+    expect(home).toContain('href="/system-map"');
   });
 });

@@ -61,6 +61,24 @@ const referrals = [
   ["Dermatology", "Skin surveillance and lesion review."],
 ];
 
+const fullSystemCoverage = [
+  ["Hematology, BMT & bleeding", "Hematology / Hemostasis", "Source request"],
+  ["Immune & lymphatic", "Immunology / Hematology", "Charted excerpt"],
+  ["Kidney", "Nephrology", "Original report needed"],
+  ["Liver & lipid", "Hepatology / Lipid management", "Original report needed"],
+  ["Lung", "Pulmonology", "Charted excerpt"],
+  ["Heart & vascular", "Cardiology / Vascular medicine", "Charted excerpt"],
+  ["Bone & spine", "Endocrinology / Orthopedics", "Source request"],
+  ["Mixed connective tissue", "Rheumatology", "Source request"],
+  ["Endocrine & mineral", "Endocrinology", "Original report needed"],
+  ["Metabolic & detoxification", "Internal medicine / Clinical pharmacology", "Original report needed"],
+  ["Brain & neurovascular", "Neurology / Neurovascular", "Original report needed"],
+  ["GI & nutrition", "Gastroenterology / Nutrition", "Charted excerpt"],
+  ["Oncology & genetics", "Genetics / Oncology", "Original report needed"],
+  ["Radiology & pathology", "Radiology / Surgical pathology", "Charted excerpt"],
+  ["Eye care", "Ophthalmology", "Original report needed"],
+];
+
 export default function MandatedLabs() {
   const groupNames = useMemo(() => Object.keys(surveillanceGroups), []);
   const [activeGroup, setActiveGroup] = useState(groupNames[0]);
@@ -100,6 +118,7 @@ export default function MandatedLabs() {
             <p className="text-sm text-muted-foreground">Uploaded source: <span className="text-foreground font-medium">Mandated_Labs_Surveillance_Referrals.md</span></p>
             <p className="text-sm text-muted-foreground">Source date: July 27, 2026</p>
             <p className="text-xs text-muted-foreground border-t border-border pt-4">The reference labels on this page point back to the uploaded source list; original reports remain the evidence record.</p>
+            <Link href="/system-map" className="inline-flex text-sm font-semibold text-accent hover:underline">Open full multi-system evidence map →</Link>
           </aside>
         </section>
 
@@ -112,6 +131,22 @@ export default function MandatedLabs() {
             <div className="bg-card border border-border p-5"><strong className="text-accent block mb-2">Confirm source records</strong><span className="text-muted-foreground">Use the original Variantyx, Invitae, Tempus, Genova, and treating-team records during review.</span></div>
             <div className="bg-card border border-border p-5"><strong className="text-accent block mb-2">Individualize decisions</strong><span className="text-muted-foreground">A clinician determines whether a test, interval, agent, preparation, contrast approach, or referral is appropriate.</span></div>
             <div className="bg-card border border-border p-5"><strong className="text-accent block mb-2">Document rationale</strong><span className="text-muted-foreground">Record accepted, deferred, modified, or declined requests with responsible specialty and follow-up date.</span></div>
+          </div>
+        </section>
+
+        <section className="space-y-5">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div className="flex items-center gap-3"><Microscope className="w-7 h-7 text-accent" /><div><h2 className="text-3xl font-bold text-accent">Whole-body coverage index</h2><p className="text-sm text-muted-foreground mt-1">Every requested clinical domain is represented here; detailed source status and verification limits are in the evidence map.</p></div></div>
+            <Link href="/system-map" className="text-sm font-semibold text-accent hover:underline">Open full evidence map →</Link>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {fullSystemCoverage.map(([domain, owner, status]) => (
+              <Link key={domain} href="/system-map" className="bg-card border border-border p-4 hover:border-accent transition">
+                <p className="font-semibold text-foreground">{domain}</p>
+                <p className="mt-1 text-xs text-muted-foreground">{owner}</p>
+                <span className="inline-block mt-3 text-[10px] uppercase tracking-wide text-accent">{status}</span>
+              </Link>
+            ))}
           </div>
         </section>
 

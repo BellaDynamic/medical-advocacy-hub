@@ -43,6 +43,9 @@ export default function Home() {
             <Link href="/mandated-labs" className="text-foreground hover:text-accent transition">
               Labs & Referrals
             </Link>
+            <Link href="/system-map" className="text-foreground hover:text-accent transition">
+              System Map
+            </Link>
             <Link href="/directive" className="text-foreground hover:text-accent transition">
               Directive
             </Link>
