@@ -53,3 +53,6 @@
 - [x] Remove all beige, yellow, gold, cream, and warm-metal tokens, utility classes, borders, badges, and button treatments from the site.
 - [x] Rebuild the medical-advocacy palette using only dark neutral/plum-black, cool rose-plum, and neutral high-contrast tones from the approved style direction.
 - [x] Add regression tests, visual verification, and a checkpoint for the no-warm-tone theme correction.
+- [x] Identify the authoritative live-site and source-document references for the medical-advocacy visual system, keeping UCM and Eternal Autumn contexts separate.
+- [x] Produce an approval-gated style and interaction specification that corrects the current site without inventing a new palette or layout language.
+- [x] Audit registered routes for legacy content, but do not hide, archive, or redesign any page until the restoration plan is approved.
