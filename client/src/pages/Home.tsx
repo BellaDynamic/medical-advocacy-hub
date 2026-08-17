@@ -40,6 +40,9 @@ export default function Home() {
             <Link href="/surveillance" className="text-foreground hover:text-accent transition">
               Surveillance
             </Link>
+            <Link href="/mandated-labs" className="text-foreground hover:text-accent transition">
+              Labs & Referrals
+            </Link>
             <Link href="/directive" className="text-foreground hover:text-accent transition">
               Directive
             </Link>

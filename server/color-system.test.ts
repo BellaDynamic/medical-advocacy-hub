@@ -49,4 +49,17 @@ describe("color system", () => {
     expect(app).toContain('path={"/merge-hub"}');
     expect(home).toContain('href="/merge-hub"');
   });
+
+  it("includes a source-led mandated labs page with clinician-review safeguards", () => {
+    const page = readFileSync(join(process.cwd(), "client", "src", "pages", "MandatedLabs.tsx"), "utf8");
+    const app = readFileSync(join(process.cwd(), "client", "src", "App.tsx"), "utf8");
+    const home = readFileSync(join(process.cwd(), "client", "src", "pages", "Home.tsx"), "utf8");
+
+    expect(page).toContain("Labs, surveillance & referral map");
+    expect(page).toContain("Clinical verification is required");
+    expect(page).toContain("Mandated_Labs_Surveillance_Referrals.md");
+    expect(page).toContain("A clinician determines");
+    expect(app).toContain('path={"/mandated-labs"}');
+    expect(home).toContain('href="/mandated-labs"');
+  });
 });

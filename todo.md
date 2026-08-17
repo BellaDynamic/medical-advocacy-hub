@@ -32,3 +32,6 @@
 - [x] Create a clear manifest that separates included sources from chat/task artifacts requiring the official Task Data Backup.
 - [x] Upload and verify the unified offline consolidation archive in Google Drive.
 - [x] Freeze the project after the consolidation handoff; do not add new features until explicitly restarted.
+- [x] Build a source-led Mandated Labs, Surveillance, and Referrals website section from the exact uploaded Markdown.
+- [x] Present surveillance, laboratory, and referral material as clinician-review requests with source provenance rather than as independently verified medical directives.
+- [x] Register the new page in navigation, add tests, verify the rendering, and save a new revision checkpoint.
