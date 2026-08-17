@@ -1,23 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: oklch(0.12 0.025 315);
-  --color-foreground: oklch(0.95 0.02 85);
+  --color-background: oklch(0.12 0.025 330);
+  --color-foreground: oklch(0.94 0.015 340);
   --color-primary: oklch(0.42 0.07 340);
-  --color-primary-foreground: oklch(0.95 0.02 85);
-  --color-secondary: oklch(0.2 0.035 315);
-  --color-secondary-foreground: oklch(0.95 0.02 85);
-  --color-accent: oklch(0.8 0.03 85);
-  --color-accent-foreground: oklch(0.14 0.025 315);
-  --color-muted: oklch(0.22 0.03 315);
-  --color-muted-foreground: oklch(0.72 0.03 85);
-  --color-border: oklch(0.32 0.04 315);
-  --color-card: oklch(0.15 0.025 315);
-  --color-card-foreground: oklch(0.95 0.02 85);
-  --color-popover: oklch(0.15 0.025 315);
-  --color-popover-foreground: oklch(0.95 0.02 85);
+  --color-primary-foreground: oklch(0.97 0.008 340);
+  --color-secondary: oklch(0.2 0.035 330);
+  --color-secondary-foreground: oklch(0.94 0.015 340);
+  --color-accent: oklch(0.67 0.065 340);
+  --color-accent-foreground: oklch(0.14 0.025 330);
+  --color-muted: oklch(0.22 0.03 330);
+  --color-muted-foreground: oklch(0.72 0.025 340);
+  --color-border: oklch(0.32 0.04 330);
+  --color-card: oklch(0.15 0.025 330);
+  --color-card-foreground: oklch(0.94 0.015 340);
+  --color-popover: oklch(0.15 0.025 330);
+  --color-popover-foreground: oklch(0.94 0.015 340);
   --color-destructive: oklch(0.48 0.08 340);
-  --color-destructive-foreground: oklch(0.95 0.02 85);
+  --color-destructive-foreground: oklch(0.97 0.008 340);
   --radius-lg: 0.5rem;
   --radius-md: calc(0.5rem - 2px);
   --radius-sm: calc(0.5rem - 4px);
@@ -34,7 +34,7 @@
   }
 }
 
-/* Clinical Callout Boxes — restrained, readable, and free of saturated red/blue. */
+/* Clinical Callout Boxes — restrained, cool-toned, and free of metallic accents. */
 .clinical-section {
   @apply mb-12 border-l-2 border-primary/40 pl-8;
 }

@@ -10,15 +10,15 @@ function collectSourceFiles(directory: string): string[] {
 }
 
 describe("color system", () => {
-  it("keeps the site free of saturated red/blue utility tokens", () => {
+  it("keeps the site free of saturated red/blue and warm-metal color tokens", () => {
     const sourceRoot = join(process.cwd(), "client", "src");
     const files = collectSourceFiles(sourceRoot).filter((file) => /\.(tsx|ts|css)$/.test(file));
     const contents = files.map((file) => readFileSync(file, "utf8")).join("\n");
 
-    expect(contents).not.toMatch(/(?:text|bg|border)-(?:red|blue|purple|violet|indigo|yellow|amber)-/);
-    expect(contents).not.toMatch(/oklch\([^)]* (260|280|300|25)\)/);
-    expect(contents).toContain("--color-background: oklch(0.12 0.025 315)");
-    expect(contents).toContain("--color-accent: oklch(0.8 0.03 85)");
+    expect(contents).not.toMatch(/(?:text|bg|border)-(?:red|blue|purple|violet|indigo|yellow|amber|orange)-/);
+    expect(contents).not.toMatch(/(?:beige|cream|gold|warm-metal|#e8dcc8|#b8a89a|#a89a8a|oklch\([^)]* (85|80)\))/i);
+    expect(contents).toContain("--color-background: oklch(0.12 0.025 330)");
+    expect(contents).toContain("--color-accent: oklch(0.67 0.065 340)");
   });
 
   it("preserves the archival warning and rescue quarantine notice", () => {

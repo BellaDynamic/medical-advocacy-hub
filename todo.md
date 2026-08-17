@@ -50,3 +50,6 @@
 - [x] Verify whether Google Takeout or another account-level Google export captures the complete Gemini/Google AI and NotebookLM chat corpus, then document the correct bulk-capture fallback if it does not.
 - [x] Add the supplied Sovereign Evidence Brief summary to the source vault and coverage ledger as an advocacy-source record with explicit verification limits.
 - [x] Preserve the brief’s multi-system, laboratory, and administrative topics as review prompts while quarantining unsupported blanket treatment, medication, saline, anesthesia, and legal-binding claims pending original records and current clinician/legal confirmation.
+- [x] Remove all beige, yellow, gold, cream, and warm-metal tokens, utility classes, borders, badges, and button treatments from the site.
+- [x] Rebuild the medical-advocacy palette using only dark neutral/plum-black, cool rose-plum, and neutral high-contrast tones from the approved style direction.
+- [x] Add regression tests, visual verification, and a checkpoint for the no-warm-tone theme correction.
