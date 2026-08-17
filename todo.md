@@ -43,3 +43,10 @@
 - [x] Add a care-coordination resources section using the available PATH/CalAIM/ECM guidance and label any unresolved “SMF” reference as pending clarification.
 - [x] Replace legacy home-page directive language with evidence-led, clinician-review framing that matches the system map.
 - [x] Test, visually verify, and checkpoint the unified evidence-led site revision.
+- [x] Create a Google AI and NotebookLM source-transfer guide with a Drive folder structure, export order, filename convention, and provenance rules.
+- [x] Provide a reusable transfer-index template for mapping each Gemini/NotebookLM output to its original sources and intended site domain.
+- [x] Document the secure Google Drive-to-Merge-Hub import sequence and delivery steps without exposing private records publicly.
+- [x] Add Google AI/Gemini and NotebookLM-specific export, copy, and fallback steps so a complete chat and its source files can be preserved before transfer.
+- [x] Verify whether Google Takeout or another account-level Google export captures the complete Gemini/Google AI and NotebookLM chat corpus, then document the correct bulk-capture fallback if it does not.
+- [x] Add the supplied Sovereign Evidence Brief summary to the source vault and coverage ledger as an advocacy-source record with explicit verification limits.
+- [x] Preserve the brief’s multi-system, laboratory, and administrative topics as review prompts while quarantining unsupported blanket treatment, medication, saline, anesthesia, and legal-binding claims pending original records and current clinician/legal confirmation.

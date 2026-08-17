@@ -42,6 +42,18 @@
 | CT scout view | Image metadata identifies CT abdomen/pelvis with contrast, Aug. 5, 2026, 11:51 AM; a scout/topogram is not a final radiology report. | `Clipboard_0_2766E783.png`; `Pasted_content_31.txt` |
 | Hemophilia B screening | Educational screener says the diagnosis/Factor IX level are patient-uncertain and that a full medical evaluation is needed; it does not diagnose hemophilia B. | `Pasted_content_30.txt`; `Pasted_content_36.txt` |
 
+## Sovereign Evidence Brief — summary-only intake
+
+The user supplied a summary for `sovereign_evidence_brief.md`, not the full Markdown file. The summary states that the brief combines timeline, laboratory, multi-system, pain/anesthesia, and civil-rights material. It is cataloged as an **advocacy / AI-compiled source summary**. It may be used to create a verification queue, but it does not independently establish the stated laboratory findings, diagnoses, causation, legal violations, or treatment instructions.
+
+| Brief topic stated in supplied summary | Ledger treatment | Required before website confirmation or instruction |
+|---|---|---|
+| Identity/timeline, access, communication, and care-coordination concerns | Advocacy chronology / administrative review prompt | Original portal records, correspondence, scheduling logs, and a qualified legal or advocacy review. |
+| Hemoglobin fractionation and PTH/calcium material | Laboratory verification prompt | The original dated laboratory reports, values, reference ranges, and ordering-provider interpretation. |
+| Vasculitis/MCTD, beta-thalassemia, cardiovascular, PHP1b, ALPS/Lynch, and other multi-system statements | Cross-specialty review prompt | Original genetic, hematology, rheumatology, cardiology, endocrinology, and other relevant specialist records. |
+| Pain, saline, opioid, steroid, anesthesia, and pre-medication statements | **Quarantined treatment content** | Current signed treating-team orders and procedure-specific review; no blanket regimen is displayed as current guidance. |
+| ADA, ACA Section 1557, California medical-board, or other civil-rights/legal statements | Legal-information / advocacy prompt | Current primary legal sources and qualified legal review; no conclusion of a violation is displayed. |
+
 ## Website build rules derived from this ledger
 
 1. Every system page will show **evidence status**, **source filename**, **owner specialty**, and **what needs confirmation**.
@@ -56,4 +68,5 @@
 |---|---|
 | Current chat attachments | `Pasted_content_19.txt` through `Pasted_content_36.txt`; `Mandated_Labs_Surveillance_Referrals.md`; `Providermemo(1).docx`; `Legal_Consultation_Memo_Brandy_Bianchini.docx`; `MedicalLettersCollectiveGHPPandProviderMemosAllDepartmentsGI-PCP-ENDO-Cardio-Vascular,Immune,andEndo,Neuro.Pulmonary.Radiology..pdf`; `PATH-Collaborative-Planning-and-Implementation-Guidance-May-2023.pdf`; `Clipboard_0_2766E783.png` |
 | Existing project synthesis | `Integrated_Body_System_Framework.md`; `Departmental_Protocols_and_Overlap_Matrix.md`; `EVIDENCE_INTEGRATION_NOTES.md`; `research_notes_uploaded_evidence_2026-07-27.md`; `PMS2_Comprehensive_Explanation.md` |
+| Summary-only source intake | `sovereign_evidence_brief.md` summary supplied in chat; full file not yet attached |
 | Coverage limitation | This ledger does not imply access to every past chat, portal, hidden file, DICOM study, or original lab/genetic report. The official Task Data Backup and original provider records remain necessary for a complete evidence record. |

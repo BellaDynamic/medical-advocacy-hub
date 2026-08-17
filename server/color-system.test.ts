@@ -102,6 +102,8 @@ describe("color system", () => {
     expect(vault).toContain("SMF resources");
     expect(vault).toContain("not defined in the currently indexed sources");
     expect(vault).toContain("Open secure evidence intake");
+    expect(vault).toContain("sovereign_evidence_brief.md");
+    expect(vault).toContain("Summary only");
     expect(home).toContain("Evidence first. Whole-person review. Clear ownership.");
     expect(home).toContain("does not independently diagnose, prescribe, grant eligibility, or make legal findings");
     expect(home).not.toContain("MANDATORY SYSTEM DIRECTIVE");
