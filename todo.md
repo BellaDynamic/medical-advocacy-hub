@@ -28,3 +28,7 @@
 - [x] Build a static HTML-ready export and current source/database inventory for independent hosting.
 - [x] Upload the recovery package to Google Drive and verify the Drive copy.
 - [x] Save a final preservation checkpoint and document the required Manus Task Data Backup steps.
+- [x] Inventory and include all currently accessible site, shared-project, and current-chat attachment materials in one offline consolidation package.
+- [x] Create a clear manifest that separates included sources from chat/task artifacts requiring the official Task Data Backup.
+- [x] Upload and verify the unified offline consolidation archive in Google Drive.
+- [x] Freeze the project after the consolidation handoff; do not add new features until explicitly restarted.
