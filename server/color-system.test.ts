@@ -25,8 +25,8 @@ describe("color system", () => {
     const home = readFileSync(join(process.cwd(), "client", "src", "pages", "Home.tsx"), "utf8");
     const rescue = readFileSync(join(process.cwd(), "client", "src", "pages", "RescueProtocol.tsx"), "utf8");
 
-    expect(home).toContain("ARCHIVAL DRAFT");
-    expect(home).toContain("Outdated acute/saline rescue protocols have been quarantined");
+    expect(home).toContain("EVIDENCE-LED DRAFT");
+    expect(home).toContain("Earlier acute/saline rescue content remains quarantined");
     expect(rescue).toContain("ARCHIVED / SUPERSEDED");
     expect(rescue).toContain("must NOT be used as a general clinical directive");
   });
@@ -91,5 +91,20 @@ describe("color system", () => {
     expect(page).toContain("No source request, advocacy statement, educational screener, or scout image");
     expect(app).toContain('path={"/system-map"}');
     expect(home).toContain('href="/system-map"');
+  });
+
+  it("keeps the source vault and home page evidence-led", () => {
+    const vault = readFileSync(join(process.cwd(), "client", "src", "pages", "SourceVault.tsx"), "utf8");
+    const home = readFileSync(join(process.cwd(), "client", "src", "pages", "Home.tsx"), "utf8");
+    const app = readFileSync(join(process.cwd(), "client", "src", "App.tsx"), "utf8");
+
+    expect(vault).toContain("PATH / CalAIM / ECM");
+    expect(vault).toContain("SMF resources");
+    expect(vault).toContain("not defined in the currently indexed sources");
+    expect(vault).toContain("Open secure evidence intake");
+    expect(home).toContain("Evidence first. Whole-person review. Clear ownership.");
+    expect(home).toContain("does not independently diagnose, prescribe, grant eligibility, or make legal findings");
+    expect(home).not.toContain("MANDATORY SYSTEM DIRECTIVE");
+    expect(app).toContain('path={"/source-vault"}');
   });
 });

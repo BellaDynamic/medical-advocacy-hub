@@ -1,0 +1,37 @@
+import { Link } from "wouter";
+import { Archive, ArrowLeft, BookOpen, FileCheck2, FolderOpen, Network, ShieldCheck, UploadCloud } from "lucide-react";
+
+type SourceItem = { name: string; class: string; status: string; use: string };
+
+const currentSources: SourceItem[] = [
+  { name: "Mandated_Labs_Surveillance_Referrals.md", class: "Source-led surveillance request", status: "Indexed", use: "Organizes requested specialty review and monitoring questions." },
+  { name: "Providermemo(1).docx", class: "Provider/advocacy memo", status: "Indexed", use: "Used for stated referral and coordination requests; original reports remain controlling evidence." },
+  { name: "MedicalLettersCollective…pdf", class: "Collective advocacy packet", status: "Indexed", use: "Used as a source of patient-stated concerns and requested department review." },
+  { name: "Legal_Consultation_Memo_Brandy_Bianchini.docx", class: "Legal consultation draft", status: "Indexed", use: "Kept separate from clinical evidence; review with a qualified attorney before relying on it." },
+  { name: "PATH-Collaborative-Planning-and-Implementation-Guidance-May-2023.pdf", class: "Public program guidance", status: "Indexed", use: "General PATH/CalAIM/ECM collaboration context, not a personal eligibility determination." },
+  { name: "Pasted_content_19.txt–Pasted_content_36.txt", class: "Chat-supplied records and working material", status: "Indexed", use: "Classified by the evidence ledger; exact claims require original-record reconciliation." },
+  { name: "Clipboard_0_2766E783.png", class: "Imaging screenshot / study metadata", status: "Indexed", use: "Study metadata only; it is not a signed imaging interpretation." },
+  { name: "Integrated_Body_System_Framework.md + Departmental_Protocols_and_Overlap_Matrix.md", class: "Existing project synthesis", status: "Indexed", use: "Working synthesis to be checked against original source reports and clinician decisions." },
+];
+
+export default function SourceVault() {
+  return (
+    <div className="min-h-screen bg-background text-foreground">
+      <div className="bg-card border-b border-primary/40 py-2 px-4 text-center text-accent text-sm font-medium">PRIVATE EVIDENCE CATALOG — Do not treat catalog presence as clinical confirmation.</div>
+      <nav className="bg-card border-b border-border sticky top-0 z-50"><div className="container py-4 flex items-center justify-between gap-4"><Link href="/" className="flex items-center gap-2 text-accent hover:opacity-80 transition font-semibold"><ArrowLeft className="w-4 h-4" /> Medical Advocacy Hub</Link><Link href="/system-map" className="text-sm text-muted-foreground hover:text-accent transition">System map</Link></div></nav>
+
+      <main className="container max-w-6xl py-10 md:py-14 space-y-10">
+        <section className="grid lg:grid-cols-[1.35fr_0.65fr] gap-8">
+          <div className="space-y-4"><div className="flex items-center gap-3 text-accent"><Archive className="w-8 h-8" /><span className="uppercase tracking-[0.18em] text-xs font-semibold">Source vault</span></div><h1 className="text-4xl md:text-6xl font-bold leading-[1.04] text-accent">Evidence, organized without overclaiming</h1><p className="text-lg text-muted-foreground max-w-3xl">This catalog records the materials currently indexed for the site and tells reviewers how each source may be used. It does not expose private files publicly or substitute summaries for original provider records.</p></div>
+          <aside className="bg-card border border-border p-6 space-y-4"><div className="flex gap-2 items-center text-accent"><UploadCloud className="w-5 h-5" /><h2 className="font-bold">Add an original report</h2></div><p className="text-sm text-muted-foreground">Use the authenticated Merge Hub to add a signed lab, genetic, pathology, or radiology document. The system stores the original and lets you review extracted text without changing the source file.</p><Link href="/merge-hub" className="inline-flex font-semibold text-sm text-accent hover:underline">Open secure evidence intake →</Link></aside>
+        </section>
+
+        <section className="space-y-4"><div className="flex items-center gap-3"><FolderOpen className="w-6 h-6 text-accent" /><h2 className="text-2xl font-bold text-accent">Current indexed material</h2></div><div className="overflow-x-auto border border-border bg-card"><table className="w-full min-w-[800px] text-left text-sm"><thead className="bg-background text-accent uppercase tracking-wider text-xs"><tr><th className="p-4">Source</th><th className="p-4">Classification</th><th className="p-4">Catalog status</th><th className="p-4">Permitted website use</th></tr></thead><tbody>{currentSources.map((source) => <tr key={source.name} className="border-t border-border align-top"><td className="p-4 font-medium text-foreground">{source.name}</td><td className="p-4 text-muted-foreground">{source.class}</td><td className="p-4"><span className="text-xs px-2 py-1 border border-accent/40 text-accent">{source.status}</span></td><td className="p-4 text-muted-foreground">{source.use}</td></tr>)}</tbody></table></div></section>
+
+        <section className="grid md:grid-cols-3 gap-4"><article className="bg-card border border-border p-6"><Network className="w-6 h-6 text-accent" /><h2 className="mt-4 font-bold text-accent">PATH / CalAIM / ECM</h2><p className="mt-2 text-sm text-muted-foreground">The attached May 2023 PATH guidance describes collaborative implementation, including Enhanced Care Management and Community Supports context. Program rules may have changed; verify current DHCS guidance before relying on it.</p></article><article className="bg-card border border-border p-6"><BookOpen className="w-6 h-6 text-accent" /><h2 className="mt-4 font-bold text-accent">SMF resources</h2><p className="mt-2 text-sm text-muted-foreground">“SMF” is not defined in the currently indexed sources. This slot is intentionally held open rather than guessing the program, organization, or service intended.</p></article><article className="bg-card border border-border p-6"><ShieldCheck className="w-6 h-6 text-accent" /><h2 className="mt-4 font-bold text-accent">Evidence workflow</h2><p className="mt-2 text-sm text-muted-foreground">Attach the original source, assign a reviewing specialty, record the clinician’s decision, and document the next follow-up step.</p></article></section>
+
+        <section className="border border-border bg-card p-6 md:p-8"><div className="flex gap-3"><FileCheck2 className="w-6 h-6 text-accent flex-shrink-0" /><div><h2 className="text-2xl font-bold text-accent">What counts as confirmation</h2><p className="mt-3 text-muted-foreground leading-relaxed">A signed laboratory, imaging, pathology, genetics, or specialist report; a documented treating-team assessment; and a recorded decision about the next action. Narrative summaries, screeners, portal screenshots, and advocacy drafts remain useful context, but they are never silently upgraded to proof.</p></div></div></section>
+      </main>
+    </div>
+  );
+}

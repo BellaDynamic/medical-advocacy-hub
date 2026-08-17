@@ -21,6 +21,7 @@ import ComprehensiveDirective from "./pages/ComprehensiveDirective";
 import ContentMergeHub from "./pages/ContentMergeHub";
 import MandatedLabs from "./pages/MandatedLabs";
 import SystemEvidenceMap from "./pages/SystemEvidenceMap";
+import SourceVault from "./pages/SourceVault";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -43,6 +44,7 @@ function Router() {
       <Route path={"/merge-hub"} component={ContentMergeHub} />
       <Route path={"/mandated-labs"} component={MandatedLabs} />
       <Route path={"/system-map"} component={SystemEvidenceMap} />
+      <Route path={"/source-vault"} component={SourceVault} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

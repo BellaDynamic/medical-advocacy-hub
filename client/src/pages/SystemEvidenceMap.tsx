@@ -80,7 +80,7 @@ export default function SystemEvidenceMap() {
           <aside className="bg-card border border-border p-6 space-y-4">
             <div className="flex items-center gap-2 text-accent"><ShieldCheck className="w-5 h-5" /><h2 className="font-bold">Non-negotiable source rule</h2></div>
             <p className="text-sm text-muted-foreground">No source request, advocacy statement, educational screener, or scout image is promoted to a diagnosis, treatment order, medication ban, imaging result, or legal conclusion.</p>
-            <Link href="/merge-hub" className="inline-flex text-sm font-semibold text-accent hover:underline">Open evidence intake →</Link>
+            <div className="flex gap-4 flex-wrap"><Link href="/merge-hub" className="inline-flex text-sm font-semibold text-accent hover:underline">Open evidence intake →</Link><Link href="/source-vault" className="inline-flex text-sm font-semibold text-accent hover:underline">View source vault →</Link></div>
           </aside>
         </section>
 

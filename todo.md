@@ -39,3 +39,7 @@
 - [x] Create an evidence ledger that distinguishes source-supported findings, user-reported concerns, requested clinical review, and claims that require original-report verification.
 - [x] Rebuild the Mandated Labs website section into a full multi-system map with explicit department ownership and source traceability.
 - [x] Add regression coverage, verify all routes and rendering, then save a revised checkpoint.
+- [x] Stage current accessible source materials in a source-vault catalog and link the catalog to the evidence intake workflow.
+- [x] Add a care-coordination resources section using the available PATH/CalAIM/ECM guidance and label any unresolved “SMF” reference as pending clarification.
+- [x] Replace legacy home-page directive language with evidence-led, clinician-review framing that matches the system map.
+- [x] Test, visually verify, and checkpoint the unified evidence-led site revision.

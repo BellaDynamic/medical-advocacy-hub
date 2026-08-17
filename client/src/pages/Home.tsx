@@ -1,242 +1,31 @@
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
-import { AlertTriangle, FileText, Shield, Clock, Users, BookOpen } from "lucide-react";
+import { BookOpen, FileSearch, FolderOpen, Network, ShieldCheck, Stethoscope } from "lucide-react";
+
+const navigation = [
+  ["System Map", "/system-map"],
+  ["Labs & Referrals", "/mandated-labs"],
+  ["Source Vault", "/source-vault"],
+  ["Merge Hub", "/merge-hub"],
+  ["Care Coordination", "/coordination"],
+  ["Risk Management", "/risk-management"],
+];
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Archival Banner */}
-      <div className="bg-card border-b border-primary/40 py-2 px-4 text-center text-accent text-sm font-medium">
-        ARCHIVAL DRAFT — Awaiting clinical update & merger. Outdated acute/saline rescue protocols have been quarantined.
-      </div>
+      <div className="bg-card border-b border-primary/40 py-2 px-4 text-center text-accent text-sm font-medium">EVIDENCE-LED DRAFT — Earlier acute/saline rescue content remains quarantined; clinical, legal, and eligibility decisions require qualified review.</div>
+      <nav className="bg-card border-b border-border sticky top-0 z-50"><div className="container py-4 flex items-center justify-between gap-5"><Link href="/" className="text-xl font-bold text-accent shrink-0">Medical Advocacy Hub</Link><div className="flex gap-4 overflow-x-auto whitespace-nowrap text-sm">{navigation.map(([label, href]) => <Link key={href} href={href} className={label === "Merge Hub" ? "text-accent font-semibold hover:underline" : "text-foreground hover:text-accent transition"}>{label}</Link>)}</div></div></nav>
 
-      {/* Navigation */}
-      <nav className="bg-card border-b border-border sticky top-0 z-50">
-        <div className="container py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-accent">Medical Advocacy Hub</h1>
-          <div className="flex gap-4">
-            <Link href="/protocol" className="text-foreground hover:text-accent transition">
-              Protocol
-            </Link>
-            <Link href="/vus" className="text-foreground hover:text-accent transition">
-              VUS
-            </Link>
-            <Link href="/safety" className="text-foreground hover:text-accent transition">
-              Safety
-            </Link>
-            <Link href="/coordination" className="text-foreground hover:text-accent transition">
-              Care Coordination
-            </Link>
-            <Link href="/escalation" className="text-foreground hover:text-accent transition">
-              Escalation
-            </Link>
-            <Link href="/rescue" className="text-foreground hover:text-accent transition">
-              Rescue
-            </Link>
-            <Link href="/failures" className="text-foreground hover:text-accent transition">
-              Failures
-            </Link>
-            <Link href="/surveillance" className="text-foreground hover:text-accent transition">
-              Surveillance
-            </Link>
-            <Link href="/mandated-labs" className="text-foreground hover:text-accent transition">
-              Labs & Referrals
-            </Link>
-            <Link href="/system-map" className="text-foreground hover:text-accent transition">
-              System Map
-            </Link>
-            <Link href="/directive" className="text-foreground hover:text-accent transition">
-              Directive
-            </Link>
-            <Link href="/risk-management" className="text-foreground hover:text-accent transition">
-              Risk Management
-            </Link>
-            <Link href="/merge-hub" className="text-accent hover:underline transition font-semibold">
-              Merge Hub
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <main>
+        <section className="bg-gradient-to-b from-card to-background py-16 md:py-24"><div className="container max-w-6xl grid lg:grid-cols-[1.3fr_0.7fr] gap-8 items-start"><div className="space-y-7"><div className="flex items-center gap-3 text-accent"><FileSearch className="w-8 h-8" /><span className="uppercase tracking-[0.18em] text-xs font-semibold">Clinical coordination workspace</span></div><h1 className="text-5xl md:text-6xl font-bold text-accent leading-[1.04]">Evidence first. Whole-person review. Clear ownership.</h1><p className="text-xl text-muted-foreground max-w-3xl">A private working site for organizing records, requests, care domains, and follow-up decisions across immune/BMT, hematology, bone, vascular/heart, kidney, liver, lung, connective tissue, endocrine/mineral, metabolic, brain, GI, oncology, radiology, and eye care.</p><div className="flex flex-wrap gap-4"><Link href="/system-map" className="bg-accent text-accent-foreground font-bold px-6 py-3 hover:opacity-90 transition">Open system map</Link><Link href="/source-vault" className="border border-accent text-accent font-bold px-6 py-3 hover:bg-accent/10 transition">Open source vault</Link></div></div><aside className="bg-card border border-border p-6 space-y-5"><div className="flex gap-3"><ShieldCheck className="w-6 h-6 text-accent flex-shrink-0" /><div><h2 className="font-bold text-accent">How this site treats evidence</h2><p className="mt-2 text-sm text-muted-foreground">A chart excerpt remains an excerpt. A patient request remains a request. An educational screener remains non-diagnostic. Original reports and documented treating-team decisions are required before information becomes a confirmed clinical finding.</p></div></div><Link href="/merge-hub" className="inline-flex text-sm font-semibold text-accent hover:underline">Add an original source securely →</Link></aside></div></section>
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-b from-card to-background py-16 md:py-24">
-        <div className="container max-w-4xl">
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <h2 className="text-5xl md:text-6xl font-bold text-accent leading-tight">
-                Clinical Mandate for Genomic Safety
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                A unified, legally binding directive documenting confirmed genomic pathology, mandatory provider protocols, and institutional accountability.
-              </p>
-            </div>
+        <section className="py-14"><div className="container max-w-6xl"><div className="flex items-end justify-between gap-6 flex-wrap"><div><p className="uppercase tracking-[0.16em] text-xs font-semibold text-accent">Start here</p><h2 className="mt-2 text-3xl font-bold text-accent">Four coordinated workstreams</h2></div><p className="max-w-xl text-sm text-muted-foreground">The site is structured so a provider, advocate, or patient can see what exists, what needs confirmation, who owns the next review, and where to find the source.</p></div><div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8"><Card className="bg-card border-border p-6"><Network className="w-6 h-6 text-accent" /><h3 className="mt-4 font-bold text-accent">System map</h3><p className="mt-2 text-sm text-muted-foreground">All major clinical domains, source status, specialty ownership, and confirmation gaps.</p><Link href="/system-map" className="inline-block mt-4 text-sm font-semibold text-accent hover:underline">Review domains →</Link></Card><Card className="bg-card border-border p-6"><Stethoscope className="w-6 h-6 text-accent" /><h3 className="mt-4 font-bold text-accent">Labs & referrals</h3><p className="mt-2 text-sm text-muted-foreground">Source-led monitoring and referral requests, explicitly marked for clinician review.</p><Link href="/mandated-labs" className="inline-block mt-4 text-sm font-semibold text-accent hover:underline">Review requests →</Link></Card><Card className="bg-card border-border p-6"><FolderOpen className="w-6 h-6 text-accent" /><h3 className="mt-4 font-bold text-accent">Source vault</h3><p className="mt-2 text-sm text-muted-foreground">Catalog of available working sources, permissible use, and what still needs an original record.</p><Link href="/source-vault" className="inline-block mt-4 text-sm font-semibold text-accent hover:underline">Open catalog →</Link></Card><Card className="bg-card border-border p-6"><BookOpen className="w-6 h-6 text-accent" /><h3 className="mt-4 font-bold text-accent">Care resources</h3><p className="mt-2 text-sm text-muted-foreground">Coordination context, including PATH/CalAIM/ECM guidance and an intentionally unassigned SMF resource slot.</p><Link href="/source-vault" className="inline-block mt-4 text-sm font-semibold text-accent hover:underline">Review resources →</Link></Card></div></div></section>
 
-            {/* Critical Alert */}
-            <div className="critical-box">
-              <div className="flex gap-4">
-                <AlertTriangle className="w-8 h-8 text-accent flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-lg font-bold text-foreground mb-2">MANDATORY SYSTEM DIRECTIVE</h3>
-                  <p className="text-foreground">
-                    This patient presents with a non-standard biological engine requiring mandatory genomic safety mapping before any clinical intervention. Standard clinical pathways, empirical radiological preps, and standardized procedural care models are mathematically and chemically guaranteed to induce severe systemic cascades due to absolute pathway contradictions.
-                  </p>
-                </div>
-              </div>
-            </div>
+        <section className="bg-card border-y border-border py-14"><div className="container max-w-6xl grid lg:grid-cols-[1fr_1fr] gap-8"><div><h2 className="text-3xl font-bold text-accent">Provider-ready review path</h2><p className="mt-4 text-muted-foreground">The site does not replace medical judgment. It gives each reviewing clinician a consistent path to an evidence-based decision.</p></div><ol className="grid sm:grid-cols-2 gap-5 text-sm text-muted-foreground"><li><strong className="block text-accent mb-2">1. Attach the original source</strong>Use signed reports, final imaging, lab values, pathology, and genetics records.</li><li><strong className="block text-accent mb-2">2. Assign the reviewing specialty</strong>Identify the clinician responsible for interpreting each issue.</li><li><strong className="block text-accent mb-2">3. Record the decision</strong>Document whether a request is accepted, modified, deferred, or declined and why.</li><li><strong className="block text-accent mb-2">4. Set a follow-up point</strong>Record the next test, symptom trigger, appointment, or coordination task.</li></ol></div></section>
+      </main>
 
-            {/* Purpose Statement */}
-            <div className="clinical-section">
-              <h3 className="clinical-header">Purpose & Scope</h3>
-              <div className="space-y-4 text-foreground">
-                <p>
-                  This site documents a unified clinical directive synthesizing confirmed genomic pathology (STX16 deletion/PHP1b and PMS2 deletion/Lynch Syndrome), institutional failure documentation, and mandatory provider protocols.
-                </p>
-                <p>
-                  It applies to Brandy Bianchini and family members with shared genetic diseases and serves as a formal, legally and clinically binding firewall for all diagnostic and therapeutic interventions.
-                </p>
-                <p>
-                  This document is intended for healthcare providers, institutional risk management, legal representatives, and clinical peer review boards.
-                </p>
-              </div>
-            </div>
-
-            {/* Key Sections */}
-            <div className="grid md:grid-cols-2 gap-4">
-              <Card className="bg-card border-border p-6 hover:bg-accent/5 transition">
-                <div className="flex gap-3 mb-3">
-                  <Shield className="w-6 h-6 text-accent flex-shrink-0" />
-                  <h4 className="text-lg font-bold text-accent">Genomic Protocol</h4>
-                </div>
-                <p className="text-foreground text-sm">
-                  Confirmed pathogenic variants (STX16/PHP1b, PMS2/Lynch) with full clinical implications, lab citations, and inheritance details.
-                </p>
-                <Link href="/protocol" className="text-accent hover:underline text-sm mt-3 inline-block">
-                  View Protocol →
-                </Link>
-              </Card>
-
-              <Card className="bg-card border-border p-6 hover:bg-accent/5 transition">
-                <div className="flex gap-3 mb-3">
-                  <AlertTriangle className="w-6 h-6 text-accent flex-shrink-0" />
-                  <h4 className="text-lg font-bold text-accent">Safety Firewall</h4>
-                </div>
-                <p className="text-foreground text-sm">
-                  Mandatory pre-procedure checklist, contraindicated agents, required lab panels, and mechanism mapping matrix.
-                </p>
-                <Link href="/safety" className="text-accent hover:underline text-sm mt-3 inline-block">
-                  View Firewall →
-                </Link>
-              </Card>
-
-              <Card className="bg-card border-border p-6 hover:bg-accent/5 transition">
-                <div className="flex gap-3 mb-3">
-                  <Clock className="w-6 h-6 text-accent flex-shrink-0" />
-                  <h4 className="text-lg font-bold text-accent">Rescue Protocol</h4>
-                </div>
-                <p className="text-foreground text-sm">
-                  Step-by-step emergency response for neuro-crash events, including IV NAC, Methyl-B12, and mineral restoration.
-                </p>
-                <Link href="/rescue" className="text-accent hover:underline text-sm mt-3 inline-block">
-                  View Protocol →
-                </Link>
-              </Card>
-
-              <Card className="bg-card border-border p-6 hover:bg-accent/5 transition">
-                <div className="flex gap-3 mb-3">
-                  <FileText className="w-6 h-6 text-accent flex-shrink-0" />
-                  <h4 className="text-lg font-bold text-accent">Clinical Directive</h4>
-                </div>
-                <p className="text-foreground text-sm">
-                  Printable, one-page provider handoff formatted for immediate clinical use and institutional filing.
-                </p>
-                <Link href="/directive" className="text-accent hover:underline text-sm mt-3 inline-block">
-                  View Directive →
-                </Link>
-              </Card>
-
-              <Card className="bg-card border-border p-6 hover:bg-accent/5 transition">
-                <div className="flex gap-3 mb-3">
-                  <Users className="w-6 h-6 text-accent flex-shrink-0" />
-                  <h4 className="text-lg font-bold text-accent">Institutional Failures</h4>
-                </div>
-                <p className="text-foreground text-sm">
-                  Documented care coordination failures with required remediation for each facility.
-                </p>
-              <Link href="/coordination" className="text-accent hover:underline text-sm mt-3 inline-block">
-                View Coordination →
-              </Link>
-              </Card>
-
-              <Card className="bg-card border-border p-6 hover:bg-accent/5 transition">
-                <div className="flex gap-3 mb-3">
-                  <BookOpen className="w-6 h-6 text-accent flex-shrink-0" />
-                  <h4 className="text-lg font-bold text-accent">Surveillance Calendar</h4>
-                </div>
-                <p className="text-foreground text-sm">
-                  Annual testing schedule with frequencies and clinical rationale for each condition.
-                </p>
-              <Link href="/coordination" className="text-accent hover:underline text-sm mt-3 inline-block">
-                View Coordination →
-              </Link>
-              </Card>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-8">
-            <Link href="/coordination">
-              <Button className="w-full sm:w-auto bg-accent hover:bg-accent/90 text-accent-foreground font-bold px-8 py-3">
-                View Care Coordination
-              </Button>
-            </Link>
-            <Link href="/protocol">
-              <Button variant="outline" className="w-full sm:w-auto border-accent text-accent hover:bg-accent/10 font-bold px-8 py-3">
-                View Protocol
-              </Button>
-            </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Key Information Section */}
-      <section className="bg-card border-t border-border py-16">
-        <div className="container max-w-4xl">
-          <h3 className="text-3xl font-bold text-accent mb-8">Who This Is For</h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="space-y-3">
-              <h4 className="text-lg font-bold text-foreground">Healthcare Providers</h4>
-              <p className="text-muted-foreground">
-                Mandatory reference for all clinical decision-making. Cross-verify every intervention against the mechanism mapping matrix.
-              </p>
-            </div>
-            <div className="space-y-3">
-              <h4 className="text-lg font-bold text-foreground">Institutional Risk Management</h4>
-              <p className="text-muted-foreground">
-                Formal evidence brief documenting institutional failures and required remediation. Serves as basis for compliance review.
-              </p>
-            </div>
-            <div className="space-y-3">
-              <h4 className="text-lg font-bold text-foreground">Legal Representatives</h4>
-              <p className="text-muted-foreground">
-                Comprehensive documentation of care coordination failures, medical negligence, and institutional accountability.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-background border-t border-border py-8">
-        <div className="container max-w-4xl text-center text-muted-foreground text-sm">
-          <p>
-            This document is a formal, legally and clinically binding clinical directive. All clinical decisions must be made in conjunction with current laboratory values, patient history, and applicable clinical guidelines.
-          </p>
-          <p className="mt-4">
-            Last Updated: July 2026 | Version 1.0
-          </p>
-        </div>
-      </footer>
+      <footer className="bg-background border-t border-border py-8"><div className="container max-w-6xl text-center text-muted-foreground text-sm"><p>Working clinical-review and advocacy archive. The site organizes sources and questions; it does not independently diagnose, prescribe, grant eligibility, or make legal findings.</p><p className="mt-3">Current revision: evidence-led source control and multi-system coordination.</p></div></footer>
     </div>
   );
 }
