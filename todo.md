@@ -56,3 +56,6 @@
 - [x] Identify the authoritative live-site and source-document references for the medical-advocacy visual system, keeping UCM and Eternal Autumn contexts separate.
 - [x] Produce an approval-gated style and interaction specification that corrects the current site without inventing a new palette or layout language.
 - [x] Audit registered routes for legacy content, but do not hide, archive, or redesign any page until the restoration plan is approved.
+- [x] Catalog `Pasted_content_02.txt` as a patient-experience/care-coordination transcript with explicit distinction between reported barriers, requests, and items requiring original record confirmation.
+- [x] Add source-led coordination pathways and a verification queue for medication authorization, imaging discussion, transfer-of-care, referrals, and reported lesion/tissue concerns without presenting unverified content as clinical or legal findings.
+- [ ] Save the tested, source-controlled transcript integration in a new checkpoint after preserving privacy and evidence boundaries.

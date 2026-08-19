@@ -109,4 +109,18 @@ describe("color system", () => {
     expect(home).not.toContain("MANDATORY SYSTEM DIRECTIVE");
     expect(app).toContain('path={"/source-vault"}');
   });
+
+  it("keeps the patient-experience transcript as a verification-limited coordination record", () => {
+    const vault = readFileSync(join(process.cwd(), "client", "src", "pages", "SourceVault.tsx"), "utf8");
+    const coordinationRecord = readFileSync(join(process.cwd(), "client", "src", "pages", "CoordinationRecord.tsx"), "utf8");
+    const app = readFileSync(join(process.cwd(), "client", "src", "App.tsx"), "utf8");
+
+    expect(vault).toContain("Pasted_content_02.txt");
+    expect(vault).toContain('href="/coordination-record"');
+    expect(coordinationRecord).toContain("Patient-reported transcript");
+    expect(coordinationRecord).toContain("It does not decide what happened");
+    expect(coordinationRecord).toContain("Medication access and authorization");
+    expect(coordinationRecord).toContain("Reported lesion or tissue concerns");
+    expect(app).toContain('path={"/coordination-record"}');
+  });
 });

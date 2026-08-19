@@ -22,6 +22,7 @@ import ContentMergeHub from "./pages/ContentMergeHub";
 import MandatedLabs from "./pages/MandatedLabs";
 import SystemEvidenceMap from "./pages/SystemEvidenceMap";
 import SourceVault from "./pages/SourceVault";
+import CoordinationRecord from "./pages/CoordinationRecord";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -45,6 +46,7 @@ function Router() {
       <Route path={"/mandated-labs"} component={MandatedLabs} />
       <Route path={"/system-map"} component={SystemEvidenceMap} />
       <Route path={"/source-vault"} component={SourceVault} />
+      <Route path={"/coordination-record"} component={CoordinationRecord} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
