@@ -1,6 +1,6 @@
 # Master medical and administrative timeline, 2011 to present
 
-Brandy Michelle Bianchini · prepared September 26, 2026 (corrected after audit) · WORKING DRAFT. Each row names its source. Facts in the patient’s own words are marked “your account.” Bracketed items still need a record.
+Brandy Michelle Bianchini · prepared September 26, 2026 · WORKING DRAFT. Each row names its source. Facts in the patient’s own words are marked “your account.” Bracketed items still need a record.
 
 
 ## BEFORE 2017 — BASELINE
