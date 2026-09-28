@@ -59,3 +59,14 @@
 - [x] Catalog `Pasted_content_02.txt` as a patient-experience/care-coordination transcript with explicit distinction between reported barriers, requests, and items requiring original record confirmation.
 - [x] Add source-led coordination pathways and a verification queue for medication authorization, imaging discussion, transfer-of-care, referrals, and reported lesion/tissue concerns without presenting unverified content as clinical or legal findings.
 - [x] Save the tested, source-controlled transcript integration in a new checkpoint after preserving privacy and evidence boundaries.
+
+## Consolidation checkpoint (2026-09-28)
+- [x] Reconciled three branches that had diverged from `main` since Aug 19 (doc reorg, master timeline, Gemini/case-organization curation) into one history with no conflicts.
+- [x] Removed a stray `package-lock.json` left by an `npm install`; project stays pinned to pnpm.
+- [x] Verified `pnpm check`, `pnpm test` (14/14), and `pnpm build` all pass on the merged result.
+- [x] Recorded the user's answer to the purpose question (public advocacy) in `STATUS.md`.
+- [ ] Visual composition reference still open (A Moonlit Room / Black Plum Concierge / Eternal Autumn / other) — see `STATUS.md`.
+- [ ] Fact-vs-reported audit across all directive/mandate documents, ahead of any public advocacy use — not started.
+- [ ] Legal review of any content naming specific providers/institutions in connection with harm, neglect, or mismanagement — not started.
+- [ ] Privacy check for any other person's identifying information across all consolidated documents — not started.
+- [ ] Remaining scattered sources not yet pulled in: Manus task-chat material outside this repo, Firebase-hosted data, and the rest of the Gemini/NotebookLM corpus per `docs/reference/GEMINI_GOOGLE_AI_BULK_EXPORT.md`.
