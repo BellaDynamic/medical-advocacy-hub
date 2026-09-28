@@ -123,4 +123,22 @@ describe("color system", () => {
     expect(coordinationRecord).toContain("Reported lesion or tissue concerns");
     expect(app).toContain('path={"/coordination-record"}');
   });
+
+  it("includes a master case organization index with medical, legal, administrative, and AI-chat curation tracks", () => {
+    const page = readFileSync(join(process.cwd(), "client", "src", "pages", "MasterCaseOrganization.tsx"), "utf8");
+    const app = readFileSync(join(process.cwd(), "client", "src", "App.tsx"), "utf8");
+    const home = readFileSync(join(process.cwd(), "client", "src", "pages", "Home.tsx"), "utf8");
+
+    expect(page).toContain("Master case organization");
+    expect(page).toContain("Medical care coordination");
+    expect(page).toContain("Legal & regulatory");
+    expect(page).toContain("Administrative & benefits");
+    expect(page).toContain("Google AI / Gemini chat curation");
+    expect(page).toContain("GEMINI_GOOGLE_AI_BULK_EXPORT.md");
+    expect(page).toContain("sovereign_evidence_brief.md");
+    expect(page).toContain("Competency ledger");
+    expect(page).toContain("nothing is deleted");
+    expect(app).toContain('path={"/case-organization"}');
+    expect(home).toContain('href="/case-organization"');
+  });
 });

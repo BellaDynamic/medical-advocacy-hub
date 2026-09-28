@@ -23,6 +23,7 @@ import MandatedLabs from "./pages/MandatedLabs";
 import SystemEvidenceMap from "./pages/SystemEvidenceMap";
 import SourceVault from "./pages/SourceVault";
 import CoordinationRecord from "./pages/CoordinationRecord";
+import MasterCaseOrganization from "./pages/MasterCaseOrganization";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -47,6 +48,7 @@ function Router() {
       <Route path={"/system-map"} component={SystemEvidenceMap} />
       <Route path={"/source-vault"} component={SourceVault} />
       <Route path={"/coordination-record"} component={CoordinationRecord} />
+      <Route path={"/case-organization"} component={MasterCaseOrganization} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
