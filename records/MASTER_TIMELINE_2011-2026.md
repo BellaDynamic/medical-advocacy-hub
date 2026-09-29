@@ -1,11 +1,15 @@
-# Master medical and administrative timeline, 2011 to present
+# Master Timeline 2011-2026 (working draft)
 
-Brandy Michelle Bianchini · prepared September 26, 2026 · WORKING DRAFT. Each row names its source. Facts in the patient’s own words are marked “your account.” Bracketed items still need a record.
+Brandy Michelle Bianchini · DOB 02/27/1975 · UCLA MRN 7219885 · Medi-Cal fee-for-service under state exemption
 
+WORKING DRAFT. Built from Drive records and GitHub repo history; each row says where it came from. Facts in her own words are marked "your account." Corrected 2026-09-28: the Dr. Solani, Dr. Ho, and hereditary-cancer-consult-attempt rows were moved from 2023 to 2025 to match the documented June 4, 2025 first in-person UCLA PCP visit; the UCLA Risk Management letter was also rebuilt to cover every UCLA department, not one provider.
+
+| Date | Institution | Provider(s) | What happened | Source | To confirm/get |
+|---|---|---|---|---|---|
 
 ## BEFORE 2017 — BASELINE
 
-| Date | Institution | Provider(s) | What happened | Source | To confirm / get |
+| Date | Institution | Provider(s) | What happened | Source | To confirm/get |
 |---|---|---|---|---|---|
 | 2011 | Marshall Medical Center (Placerville) | [surgeon / pathologist] | Mass resection (from a June 2026 AI-drafted note; no Marshall record of it is in your files). Your Nov 2024 note says Marshall lost records from before its 2017 Epic transfer. | Nov 2024 note (Pulled chart and medical information); 6/29/2026 note | Records request to Marshall; confirm the 2011 surgery and whether any 2017 surgery occurred (your 2017 records show an ER visit only) |
 | Before 2017 | PPO through California health plans | — | Paid PPO; family history of autosomal dominant conditions repeatedly reported to providers, not acted on (your account). | Master timeline docs (Sept 2026) | Names of PCPs seen; Kelada MD and Shingle Springs Tribal Health records obtained by law firm 2018 show no neck/back complaints for 5 years before the accident |
@@ -13,7 +17,7 @@ Brandy Michelle Bianchini · prepared September 26, 2026 · WORKING DRAFT. Each 
 
 ## 2017 — THE ACCIDENT AND FIRST ER CYCLE
 
-| Date | Institution | Provider(s) | What happened | Source | To confirm / get |
+| Date | Institution | Provider(s) | What happened | Source | To confirm/get |
 |---|---|---|---|---|---|
 | Jun 20–21, 2017 | Marshall Medical Center ER | [ER physician; Dr. Schlund named on your claim form] | Passenger in collision at Palladio garage, Folsom. Thrown; neck, shoulder, hand and right-side symptoms. ER admission 6/20–6/21. ER bill $18,270.72. Codes on insurer review: D50.9, M25.511, M54.2, R07.89. | State Farm statement of facts and explanation of review; law-firm letters | Full ER chart, imaging, nursing notes |
 | Jun 22, 2017 | State Farm | — | Your medical statement of facts on the accident (claim 55-0520-F71). | Drive (0B3t86… jpgs) | — |
@@ -26,7 +30,7 @@ Brandy Michelle Bianchini · prepared September 26, 2026 · WORKING DRAFT. Each 
 
 ## 2018 — COVERAGE AND DISABILITY
 
-| Date | Institution | Provider(s) | What happened | Source | To confirm / get |
+| Date | Institution | Provider(s) | What happened | Source | To confirm/get |
 |---|---|---|---|---|---|
 | Jan 31–Oct 25, 2018 | H&H Pain Management | [physician] | Pain management. | Law-firm treatment list | Records |
 | Jul 20, 2018 | Mercury Insurance (other driver) | Weinberger Law Firm | Policy-limit demand sent. 5-year prior records obtained Sept–Oct 2018 (Kelada MD; Shingle Springs Tribal Health; UC Davis). | Law-firm letters | Settlement outcome |
@@ -37,7 +41,7 @@ Brandy Michelle Bianchini · prepared September 26, 2026 · WORKING DRAFT. Each 
 
 ## 2019–2021 — GENOMIC WORKUP STALLS
 
-| Date | Institution | Provider(s) | What happened | Source | To confirm / get |
+| Date | Institution | Provider(s) | What happened | Source | To confirm/get |
 |---|---|---|---|---|---|
 | Jan 17, 2019 | Physical therapy | — | PT. Law firm rebuts insurer’s “7-month gap” claim with dated treatment list. | Law-firm letter 6/3/2019 | — |
 | 2019 – early 2020 | UC Davis MIND Institute, Genomic Medicine | Rebecca Mardach, MD (some of your notes say “Murdoch”) | Genomic evaluation begins. Visit letter records you as 44 (before Feb 2020). Testing not completed; Dr. Mardach retires as pandemic starts. | Genomic Medicine After Visit Summary | Confirm spelling and visit date |
@@ -45,7 +49,7 @@ Brandy Michelle Bianchini · prepared September 26, 2026 · WORKING DRAFT. Each 
 
 ## 2022–2023 — REPEATED ER AND REFERRAL FAILURE
 
-| Date | Institution | Provider(s) | What happened | Source | To confirm / get |
+| Date | Institution | Provider(s) | What happened | Source | To confirm/get |
 |---|---|---|---|---|---|
 | 2022 | Maximus (federal contractor) | — | Assessment that comprehensive UCLA- or Mayo-level care is required. Recommendations not implemented. | Case documentation xlsx (6/2025) | Full report. Other Maximus reviews to be requested from SSA/agency by counsel |
 | 2022 | Multiple | — | Third head trauma (your account). Providers said case “too complicated” and deflected to Stanford (lymphatics), UCSF (endocrine/genomics), Lucile Packard (genomics) without stabilizing. | Your master-timeline docs | Dates and names |
@@ -53,14 +57,11 @@ Brandy Michelle Bianchini · prepared September 26, 2026 · WORKING DRAFT. Each 
 | Jul 4, 2022 | Mercy Folsom (Dignity Health) | — | ER visit and heart ultrasound. | Full SSI & Legal Harm Timeline | ER chart, echo report |
 | Aug 19, 2022 | Marshall Medical Center ER | — | ER visit and CT imaging. | Same | ER chart, CT report |
 | Mar 15, 2023 | UC Davis ER | — | ER visit with emergency resuscitation; chest X-ray with device noted. | Same | ER chart, resuscitation record |
-| Summer 2023 | UCLA OB/GYN, Oncology, GI | [scheduler] | Attempt to set up a hereditary-cancer consult between OB/GYN and Oncology for Lynch syndrome; not completed (your account). | Repo timeline | Referral records |
-| Sep 1, 2023 | UCLA (specialty to confirm: OB/GYN or oncology) | Dr. Solani; a witness was present | Appointment where you report vulgar, retaliatory behavior toward you; you declined further care there. Clinic manager did not act on your complaint. Your repo says oncology, but your July 2026 dictation describes an ultrasound and a hysterectomy offer, which points to OB/GYN. | Repo timeline; Master Directive | Witness name; date/time; complaint record; manager name |
-| Fall–Winter 2023 | UCLA GI | Wendy Ho, MD; triage nurse | GI care begins. Triage nurse tells you the team knew only “Lynch syndrome” and the PCP had put little information in the chart. | Repo timeline | Nurse name; chart note |
 | 2023 | UCLA Health (telehealth) | Dr. Dogi | Acute telehealth care. 2024–25 remote care; no UCLA ER visits. | ER Summary (corrected) | — |
 
 ## 2024 — ADMINISTRATIVE OBSTRUCTION AND SSI
 
-| Date | Institution | Provider(s) | What happened | Source | To confirm / get |
+| Date | Institution | Provider(s) | What happened | Source | To confirm/get |
 |---|---|---|---|---|---|
 | 2024 | WellSpace Health | Dr. Jeffrey McGee (PCP, per Oct 2024 provider list) | Release-of-information form obstruction; post-surgery communication failures. | Case documentation xlsx; Oct 2024 provider list | Dates, surgery date, ROI forms |
 | 2024 | UCLA Radiology / Interventional | [ordering providers] | CT ordered 17+ times over several years without meaningful interpretation; MRI area reduced against the physician’s request (your account). | Repo timeline | Order and report list from patient portal |
@@ -73,7 +74,7 @@ Brandy Michelle Bianchini · prepared September 26, 2026 · WORKING DRAFT. Each 
 
 ## 2025 — UC DAVIS SEDATION AND UCLA TRANSFER
 
-| Date | Institution | Provider(s) | What happened | Source | To confirm / get |
+| Date | Institution | Provider(s) | What happened | Source | To confirm/get |
 |---|---|---|---|---|---|
 | Jan 1–3, 2025 | Sutter Health ER | [names] | Sent to urgent care by DHCS Medi-Nurse, then ambulance. Suspected sepsis; IV fluids; no full neurological or endocrine workup; no coordinated follow-up. | ER Summary (corrected) | Discharge summary |
 | Jun 4, 2025 | UCLA Santa Monica | Jessica Eby, MD | First in-person PCP visit. | ER Summary | Visit note |
@@ -81,10 +82,13 @@ Brandy Michelle Bianchini · prepared September 26, 2026 · WORKING DRAFT. Each 
 | Jun 11–16, 2025 | UCLA triage; self-documented | Nurse Suzanne Ail G. | 6/11 nurse advises ER. Fevers 102.8–105.0°F, BP 83/58 to 127/100, new cough, node swelling documented with photo-timestamps. About 15 referrals given; told to “figure it out” (your account). | ER Summary; case documentation xlsx | Message or note with exact wording |
 | Jul 17, 2025 | UC Davis Genetics | Alena Egense (genetic counselor) | MyChart message offers “optional” genome re-analysis while weeks of calls to administrative staff went unreturned. | Executive Legal Intake Cover Sheet (9/2026) | The MyChart message itself |
 | Jul 30, 2025 | UCLA Health | Dr. Eby | AI-drafted clinical directive to Dr. Eby dated 7/30/2025: image-guided biopsy and flow cytometry of thoracic/axillary masses; contrast MRI with pre-medication protocol. Nothing in your files shows it was sent. | Medical Critical Info doc | Whether and how it was sent (portal message?) and any response |
+| Summer 2025 | UCLA OB/GYN, Oncology, GI | [scheduler] | Attempt to set up a hereditary-cancer consult between OB/GYN and Oncology for Lynch syndrome, following the referral flood after your first PCP visit; not completed (your account). CORRECTED: earlier draft misdated this 2023 — your only UCLA contact before Jun 4, 2025 was 2023 telehealth with Dr. Dogi, so an in-person hereditary-cancer consult attempt could not have occurred in 2023. | Repo timeline (date corrected per your review) | Referral records; exact month |
+| Sep 1, 2025 | UCLA (specialty to confirm: OB/GYN or oncology) | Dr. Solani; a witness was present | Appointment where you report vulgar, retaliatory behavior toward you; you declined further care there. Clinic manager did not act on your complaint. Your repo says oncology, but your July 2026 dictation describes an ultrasound and a hysterectomy offer, which points to OB/GYN. CORRECTED: earlier draft misdated this 2023; moved to 2025 consistent with your Jun 4, 2025 first in-person UCLA visit. | Repo timeline; Master Directive (date corrected per your review) | Witness name; exact date/time; complaint record; manager name |
+| Fall 2025 | UCLA GI | Wendy Ho, MD; triage nurse | GI care begins. Triage nurse tells you the team knew only “Lynch syndrome” and the PCP had put little information in the chart. CORRECTED: earlier draft misdated this Fall–Winter 2023; moved to 2025, after your first UCLA PCP visit and the Sep 1, 2025 Solani appointment. | Repo timeline (date corrected per your review) | Nurse name; chart note; exact month |
 
 ## 2026 — CURRENT
 
-| Date | Institution | Provider(s) | What happened | Source | To confirm / get |
+| Date | Institution | Provider(s) | What happened | Source | To confirm/get |
 |---|---|---|---|---|---|
 | Jun 2026 | UCLA Health | Dr. Eby | Orders full chest and abdomen CTs with and without contrast; not scheduled or coordinated with the hospital for weeks. | Repo timeline | Order dates; scheduling log |
 | Jun 29, 2026 | Marshall records | — | A June 2026 AI-drafted note says records of 2011 and 2017 mass resections were lost. Your Nov 2024 note says records before Marshall’s 2017 Epic transfer are gone. No written statement from Marshall is in your files. | Record-reconstruction note; Nov 2024 note | Written response from Marshall; preservation demand |
@@ -99,11 +103,12 @@ Brandy Michelle Bianchini · prepared September 26, 2026 · WORKING DRAFT. Each 
 | Sep 2026 | UCLA Patient Experience | Carmen | Told to compile everything for the director. No assigned liver, kidney or oncology provider; masses in the chest and thoracic area; approved medication still not obtained after more than a year. | Your accounts | Call dates; authorization denials |
 | Sep 28, 2026 | UCLA Health | Dr. Eby | Appointment 1:00 PM (from your notebook). Dr. Eby is going on maternity leave; your July directive names Dr. D’Oro as coverage. | Notebook coordination doc | Confirm; hand off before leave |
 
-## What is still missing
+## Open items / gaps
 
 - Every filed name has to be checked against the record before it goes in a complaint. Cells marked [brackets] are unknown.
-- Witnesses: your repo identifies the person present at the Sept 1, 2023 visit with Dr. Solani and imaging/interventional staff only by role. The audio and transcript files themselves (iPad and phone) are not in Drive or GitHub, so names of imaging-department managers still need to come from them.
+- Witnesses: your repo identifies the person present at the Sep 1, 2025 visit with Dr. Solani and imaging/interventional staff only by role. The audio and transcript files themselves (iPad and phone) are not in Drive or GitHub, so names of imaging-department managers still need to come from them.
 - The county-office misdirection by facilities and licensing staff: no dated entry is in Drive or GitHub yet. You are Medi-Cal fee-for-service under a state exemption, not county managed care; add the dates when the transcripts are in.
-- Conflicts to settle before anything is signed: (1) Feb 2022 UCLA colloid-cyst imaging vs. UCLA contact starting 2023; (2) your UC Davis slide says propofol was given, but your June 2025 ER summary lists ketamine, midazolam, fentanyl, and hydromorphone — check the medication administration record; (3) PPO default dated 2017 in one file and 2024 in another; (4) Maximus dated 2022 in one file and 2024 in another; (5) SSA ALJ 2018 vs. 2024 hearing; (6) your referral portal shows authorized referrals (for example orthopedics and rehab, 2/24/2026–2/24/2027) alongside a note that all referrals expired — say “authorized but not scheduled or assigned” where that is what happened; (7) provider names as transcribed (Reservoir/Rezapour) need checking; (8) Dr. Solani appears as oncology in your repo but sounds like OB/GYN in your July 2026 dictation; (9) the July 30, 2025 directive and July 28, 2026 grievance in Drive are drafts, and no record shows either was delivered; (10) Marshall: records lost in the 2017 Epic transfer (your Nov 2024 note) vs. 2011 and 2017 resections (June 2026 AI note).
+- DATE CORRECTION (per your review, Sep 2026): the source repo timeline labeled the hereditary-cancer consult attempt, the Dr. Solani appointment, and the start of Dr. Ho’s GI care as "2023." That is inconsistent with your first in-person UCLA visit being Jun 4, 2025 (your only 2023 UCLA contact was telehealth with Dr. Dogi). All three rows have been moved to 2025 (Summer 2025, Sep 1 2025, and Fall 2025 respectively) in this corrected draft. If any of the three actually happened in 2026 instead, tell me and I will move them again.
+- Conflicts to settle before anything is signed: (1) your UC Davis slide says propofol was given, but your June 2025 ER summary lists ketamine, midazolam, fentanyl, and hydromorphone — check the medication administration record; (2) PPO default dated 2017 in one file and 2024 in another; (3) Maximus dated 2022 in one file and 2024 in another; (4) SSA ALJ 2018 vs. 2024 hearing; (5) your referral portal shows authorized referrals (for example orthopedics and rehab, 2/24/2026–2/24/2027) alongside a note that all referrals expired — say “authorized but not scheduled or assigned” where that is what happened; (6) provider names as transcribed (Reservoir/Rezapour) need checking; (7) Dr. Solani appears as oncology in your repo but sounds like OB/GYN in your July 2026 dictation; (8) the July 30, 2025 directive and July 28, 2026 grievance in Drive are drafts, and no record shows either was delivered; (9) Marshall: records lost in the 2017 Epic transfer (your Nov 2024 note) vs. 2011 and 2017 resections (June 2026 AI note); (10) Feb 2022 UCLA colloid-cyst imaging — confirm which UCLA department/location did this reading, since your main UCLA relationship (PCP, Oncology, GI) did not begin until 2025.
 - Maximus: you have one report. Counsel can request the other reviews from the contracting agencies or Maximus.
 - Gemini, NotebookLM, and Google AI bioscience documents: I found the Gemini medical and genomic documents in Drive and have used them only for background. I have not cited them as evidence.
