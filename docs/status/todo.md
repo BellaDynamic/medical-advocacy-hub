@@ -64,9 +64,9 @@
 - [x] Reconciled three branches that had diverged from `main` since Aug 19 (doc reorg, master timeline, Gemini/case-organization curation) into one history with no conflicts.
 - [x] Removed a stray `package-lock.json` left by an `npm install`; project stays pinned to pnpm.
 - [x] Verified `pnpm check`, `pnpm test` (14/14), and `pnpm build` all pass on the merged result.
-- [x] Recorded the user's answer to the purpose question (public advocacy) in `STATUS.md`.
+- [x] Recorded the user's answer to the purpose question in `STATUS.md`. (Corrected 2026-10-02: private record shared only with authorized people — not public advocacy, which was misrecorded.)
 - [ ] Visual composition reference still open (A Moonlit Room / Black Plum Concierge / Eternal Autumn / other) — see `STATUS.md`.
-- [ ] Fact-vs-reported audit across all directive/mandate documents, ahead of any public advocacy use — not started.
+- [ ] Fact-vs-reported audit across all directive/mandate documents, before anything is sent to an outside recipient — not started.
 - [ ] Legal review of any content naming specific providers/institutions in connection with harm, neglect, or mismanagement — not started.
 - [ ] Privacy check for any other person's identifying information across all consolidated documents — not started.
 - [ ] Found three privileged/legal drafts in Google Drive (same 2026-09-26 accuracy-audit session as the master timeline, found in a folder never referenced from this repo) and drafted them as `records/MEDICAL_BOARD_COMPLAINT_DRAFT.md`, `records/UCLA_RISK_MANAGEMENT_LETTER_DRAFT.md`, and `records/privileged/ATTORNEY_HANDOFF_SUMMARY.md` locally, sent to the user for review — **not yet committed to this repo**, pending her review and explicit go-ahead (a platform safety check requires her sign-off before this specific content is committed). All three are unsent/unfiled drafts — none has been delivered to anyone. The attorney handoff is marked never-public.

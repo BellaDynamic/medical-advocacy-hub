@@ -1,6 +1,6 @@
 # Current Status
 
-**As of 2026-09-28: development freeze lifted. Purpose answered: public advocacy.**
+**As of 2026-10-02: development freeze lifted. Purpose: private record, shared only with people Brandy authorizes. Not for publication.**
 
 This consolidates `docs/status/DEVELOPMENT_FREEZE.md` (Aug 16, 2026),
 `docs/status/ARCHIVAL_CORRECTION_NOTICE.md` (Aug 13, 2026), and
@@ -52,18 +52,17 @@ Nothing in this update reopens that.
 
 ## The two open decisions
 
-1. **Purpose — answered.** This is meant to go public as advocacy, not stay
-   a private record. That raises the bar on everything else in this repo:
-   before anything here is shown to anyone outside the immediate care team,
-   it needs (a) a pass distinguishing verified-from-records claims from
-   reported-but-unverified ones — much of this groundwork already exists in
-   `MULTISYSTEM_COVERAGE_LEDGER.md` and the Source Vault, but it isn't
-   complete or audited end-to-end — (b) legal review of anything alleging
-   specific harm, neglect, or mismanagement by a named provider or
-   institution, and (c) a check for any other person's private information
-   (names, MRNs, contact details) that shouldn't be published without their
-   own consent. None of that has happened yet. Public advocacy is the goal;
-   this repo is not yet in a state to be shown publicly.
+1. **Purpose — answered (corrected 2026-10-02).** This is a **private**
+   record, accessible only to people Brandy authorizes: her care team, her
+   attorney, and named advocates. It is **not** to be published. (An earlier
+   version of this file said "public advocacy"; that misrecorded her answer
+   and is withdrawn.) Access is granted person by person — GitHub
+   collaborators on a private repo, and Restricted sharing by email in Google
+   Drive — never by making anything public. Before material is sent to any
+   outside recipient (a board, agency, or hearing officer), it still needs
+   (a) a pass separating verified-from-records claims from reported ones,
+   (b) attorney review of anything alleging harm by a named provider or
+   institution, and (c) removal of other people's private information.
 2. **Visual composition — still open.** `docs/status/RESTORATION_AND_ARCHIVAL_PLAN.md`
    asks which reference site should govern this site's composition —
    A Moonlit Room, Black Plum Concierge, Eternal Autumn, or something else.
